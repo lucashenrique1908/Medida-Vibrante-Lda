@@ -61,7 +61,7 @@ const PROJECTS = [
 
 const FALLBACK_IMAGE =
 	"https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1200&q=60";
-const WHATSAPP_NUMBER = "351900000000";
+const WHATSAPP_NUMBER = "351967722023";
 
 const previewGrid = document.getElementById("preview-grid");
 const galleryGrid = document.getElementById("gallery-grid");
