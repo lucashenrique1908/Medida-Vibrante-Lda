@@ -1,0 +1,727 @@
+﻿<!doctype html>
+<html lang="pt-PT">
+	<head>
+		<!-- Metadados base do documento e carregamento dos recursos globais. -->
+		       <meta charset="UTF-8" />
+		       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		       <title>Medida Vibrante Lda | Ar Condicionado</title>
+		       <meta name="description" content="Instalação, manutenção e reparação de ar condicionado em Lisboa e Margem Sul. Empresa certificada, soluções eficientes para residências e empresas." />
+		       <meta name="robots" content="index, follow" />
+		       <meta property="og:title" content="Medida Vibrante Lda | Ar Condicionado" />
+		       <meta property="og:description" content="Instalação, manutenção e reparação de ar condicionado em Lisboa e Margem Sul. Empresa certificada, soluções eficientes para residências e empresas." />
+		       <meta property="og:image" content="img/projetos/imgGerais/slogan.png" />
+		       <meta property="og:type" content="website" />
+		       <meta property="og:locale" content="pt_PT" />
+		       <link rel="shortcut icon" href="img/projetos/imgGerais/slogan.png" type="image/x-icon">
+		       <link rel="preconnect" href="https://fonts.googleapis.com" />
+		       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		       <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Oswald:wght@500;600&display=swap" rel="stylesheet" />
+		       <link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<!-- Cabeçalho fixo com logótipo, navegação principal, menu mobile e alternador de tema. -->
+		<header class="site-header">
+			<div class="container nav-wrap">
+				<!-- A imagem do logótipo é trocada pelo JavaScript em applyTheme(), em js/script.js. -->
+				   <div class="logo-title-wrap">
+					       <a href="#topo" class="logo" aria-label="Medida Vibrante Lda">
+						       <img id="brand-logo" src="img/projetos/imgGerais/slogan.png" alt="Slogan da Medida Vibrante Lda" width="120" height="auto" loading="lazy" />
+						       <span class="company-name">Medida Vibrante Lda</span>
+					       </a>
+					       <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema" title="Alternar tema">
+						       <!-- SVG será inserido via JS -->
+					       </button>
+				   </div>
+				<!-- Botão hamburguer visível apenas no mobile; o JS abre/fecha o drawer com a classe body.menu-open. -->
+				       <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-nav">
+					       <span></span>
+					       <span></span>
+					       <span></span>
+				       </button>
+				   <div class="nav-actions">
+					   <!-- Menu principal. No mobile, este bloco vira um painel lateral de 80% da largura. -->
+					       <nav id="primary-nav" aria-label="Navegação principal">
+						       <a href="#promocoes">Promoções</a>
+						       <a href="#sobre">Sobre</a>
+						       <a href="#projetos">Projetos</a>
+						       <a href="#servicos">Serviços</a>
+						       <a href="#formulario">Formulário</a>
+						       <a href="#avaliacoes">Avaliações</a>
+						       <a href="#zonas">Zonas</a>
+					       </nav>
+				   </div>
+				       <!-- Removido botão duplicado de theme-toggle para evitar IDs duplicados -->
+
+			</div>
+		</header>
+
+		<!-- Seção de promoções -->
+		<section id="promocoes" class="section">
+			<div class="container">
+				<div class="promo-card">
+					<div class="promo-header">
+						<p class="promo-kicker">Campanha de Climatização</p>
+						<h1 class="promo-title">Ar Condicionado Split Inverter com Instalação Incluida</h1>
+						<p class="promo-subtitle">
+							Solução eficiente, elegante e preparada para todo o ano com conforto e controlo inteligente.
+						</p>
+					</div>
+
+					<div class="promo-hero">
+						<div class="promo-product">
+							       <div class="promo-images-grid">
+								       <div class="product-card"><img src="img/imgPromo/img9.webp" alt="Imagem promocional 1" class="promo-img" loading="lazy" /></div>
+								       <div class="product-card"><img src="img/imgPromo/img6.png" alt="Imagem promocional 2" class="promo-img" loading="lazy" /></div>
+								       <div class="product-card"><img src="img/imgPromo/imgbauf4.webp" alt="Imagem promocional 3" class="promo-img" loading="lazy" /></div>
+								       <div class="product-card"><img src="img/imgPromo/imgbauf5.webp" alt="Imagem promocional 4" class="promo-img" loading="lazy" /></div>
+							       </div>
+							
+								<defs>
+									<linearGradient id="unitBody" x1="0%" y1="0%" x2="100%" y2="100%">
+										<stop offset="0%" stop-color="#fafdff" />
+										<stop offset="100%" stop-color="#d7eaf8" />
+									</linearGradient>
+									<linearGradient id="airFlow" x1="0%" y1="0%" x2="100%" y2="0%">
+										<stop offset="0%" stop-color="#49b8ff" stop-opacity="0.85" />
+										<stop offset="100%" stop-color="#8df0cd" stop-opacity="0.3" />
+									</linearGradient>
+								</defs>
+
+								<rect x="80" y="60" width="480" height="130" rx="28" fill="url(#unitBody)" />
+								<rect x="110" y="92" width="300" height="18" rx="9" fill="#d7ecf9" />
+								<rect x="110" y="124" width="240" height="10" rx="5" fill="#c4dceb" />
+								<circle cx="500" cy="125" r="18" fill="#0f6ba8" opacity="0.95" />
+								<circle cx="500" cy="125" r="7" fill="#eefaff" />
+								<path d="M100 200 C180 220, 250 220, 320 200" stroke="url(#airFlow)" stroke-width="14" fill="none" stroke-linecap="round" />
+								<path d="M200 230 C290 255, 390 255, 500 228" stroke="url(#airFlow)" stroke-width="12" fill="none" stroke-linecap="round" />
+								<path d="M150 265 C240 300, 360 300, 470 262" stroke="url(#airFlow)" stroke-width="10" fill="none" stroke-linecap="round" />
+							</svg>
+						</div>
+
+						<div class="promo-summary">
+							<div class="modelo-badge" aria-label="Classe energetica A mais mais">
+								<strong>BAUF</strong>
+								<span class="energy-label">Potência: 9.000 BTUS</span>
+								<span class="energy-label">Modelo: Momentum</span>
+								<span class="energy-label">Cor: Preto ou Branco</span>
+							</div>
+							<div class="energy-badge" aria-label="Classe energetica A mais mais">
+								<!-- <span class="energy-label">Bauf 9.000 BTUS</span>
+								<span class="energy-label">Modelo: Momentum</span>
+								<span class="energy-label">Cor: Preto ou Branco</span> -->
+								<span class="energy-label">Classe Energética</span>
+								<strong>A++</strong>
+							</div>
+
+							<div class="promo-price-block">
+								<span class="price-label">Preço promocional</span>
+								<div class="promo-price">760€</div>
+								<p class="price-note">Instalação base incluida</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="features-grid" aria-label="Funcionalidades principais">
+						<div class="feature active">
+							<span class="icon">❄️</span>
+							<p>Arrefecimento</p>
+						</div>
+						<div class="feature">
+							<span class="icon">☀️</span>
+							<p>Aquecimento</p>
+						</div>
+						<div class="feature">
+							<span class="icon icon-stacked">
+								<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="ac" x="0" y="0" style="enable-background:new 0 0 55 55" version="1.1" viewBox="0 0 55 55">
+									<g>
+										<path fill="currentColor" d="M48.75,10.0120544H6.25c-1.5200195,0-2.75,1.2299805-2.75,2.75v15.2599487c0,1.5200195,1.2299805,2.75,2.75,2.75h2.4399414
+		h37.619873H48.75c1.5197754,0,2.75-1.2299805,2.75-2.75V12.7620544C51.5,11.2420349,50.2697754,10.0120544,48.75,10.0120544z
+		 M50,28.0220032c0,0.6900024-0.5600586,1.25-1.25,1.25h-1.6901855v-1.7399902h-1.5H9.4399414h-1.5v1.7399902H6.25
+		c-0.6901855,0-1.25-0.5599976-1.25-1.25V12.7620544c0-0.6900024,0.5598145-1.25,1.25-1.25h42.5
+		c0.6899414,0,1.25,0.5599976,1.25,1.25V28.0220032z"></path>
+										<path fill="currentColor" d="M44.3098145 22.7820129h-33.619873c-1.5200195 0-2.75 1.2300415-2.75 2.75v.5h1.5 36.119873 1.5v-.5C47.0598145 24.0120544 45.829834 22.7820129 44.3098145 22.7820129zM10.2099609 16.36203c.1999512 0 .3898926-.0700073.5400391-.2199707.1398926-.1400146.2099609-.3300171.2099609-.5300293 0-.0999756-.0200195-.1900024-.0500488-.2799683-.0400391-.1000366-.1000977-.1800537-.1599121-.25-.2202148-.210022-.550293-.2800293-.8200684-.1600342-.0900879.039978-.1799316.0900269-.25.1600342-.0700684.0699463-.1201172.1499634-.1601563.25-.0397949.0899658-.0598145.1799927-.0598145.2799683 0 .2000122.079834.3900146.2199707.5300293C9.829834 16.2920227 10.0197754 16.36203 10.2099609 16.36203zM13.6799316 16.36203c.1999512 0 .3898926-.0700073.5300293-.2199707.1398926-.1400146.2199707-.3300171.2199707-.5300293 0-.0999756-.0200195-.1900024-.0600586-.2799683-.0400391-.1000366-.0900879-.1800537-.1599121-.25-.0700684-.0700073-.1501465-.1200562-.2402344-.1600342-.1899414-.0800171-.3999023-.0800171-.579834 0-.0900879.039978-.170166.0900269-.2399902.1600342-.0700684.0699463-.130127.1499634-.1601563.25-.0400391.0899658-.0598145.1799927-.0598145.2799683 0 .2000122.079834.3900146.2199707.5300293C13.2897949 16.2920227 13.4799805 16.36203 13.6799316 16.36203zM23.3098145 18.7320251h8.380127c.4199219 0 .75-.3300171.75-.75 0-.4099731-.3300781-.75-.75-.75h-8.380127c-.4199219 0-.75.3400269-.75.75C22.5598145 18.4020081 22.8898926 18.7320251 23.3098145 18.7320251zM44.652832 36.4977112c0-1.1748047-.4575195-2.2792969-1.2885742-3.1103516-.2929688-.2929688-.7675781-.2929688-1.0605469 0s-.2929688.7675781 0 1.0605469c.5473633.5478516.8491211 1.2763672.8491211 2.0498047 0 .7744141-.3012695 1.5019531-.8491211 2.0498047-1.715332 1.7148438-1.715332 4.5058594 0 6.2207031.1464844.1464844.3383789.2197266.5302734.2197266s.3837891-.0732422.5302734-.2197266c.2929688-.2929688.2929688-.7675781 0-1.0605469-1.1303711-1.1298828-1.1303711-2.9697266 0-4.0996094C44.1953125 38.7770081 44.652832 37.6725159 44.652832 36.4977112zM35.6977539 33.3873596c-.2919922-.2929688-.7675781-.2929688-1.0605469 0s-.2929688.7675781 0 1.0605469c1.1298828 1.1308594 1.1298828 2.9697266 0 4.0996094-.8310547.8310547-1.2885742 1.9355469-1.2885742 3.1103516s.4575195 2.2792969 1.2885742 3.1103516c.1464844.1464844.3383789.2197266.5302734.2197266s.3837891-.0732422.5302734-.2197266c.2929688-.2929688.2929688-.7675781 0-1.0605469-.5478516-.5478516-.8491211-1.2753906-.8491211-2.0498047s.3012695-1.5019531.8491211-2.0498047C37.4121094 37.893219 37.4125977 35.1031799 35.6977539 33.3873596zM29.3193359 36.4977112c0-1.1748047-.4575195-2.2792969-1.2885742-3.1103516-.2929688-.2929688-.7675781-.2929688-1.0605469 0s-.2929688.7675781 0 1.0605469c.5473633.5478516.8491211 1.2763672.8491211 2.0498047 0 .7744141-.3012695 1.5019531-.8491211 2.0498047-1.715332 1.7148438-1.715332 4.5058594 0 6.2207031.1464844.1464844.3383789.2197266.5302734.2197266s.3837891-.0732422.5302734-.2197266c.2929688-.2929688.2929688-.7675781 0-1.0605469-1.1303711-1.1298828-1.1303711-2.9697266 0-4.0996094C28.8618164 38.7770081 29.3193359 37.6725159 29.3193359 36.4977112zM20.3642578 33.3873596c-.2919922-.2929688-.7675781-.2929688-1.0605469 0s-.2929688.7675781 0 1.0605469c1.1298828 1.1308594 1.1298828 2.9697266 0 4.0996094-.8310547.8310547-1.2885742 1.9355469-1.2885742 3.1103516s.4575195 2.2792969 1.2885742 3.1103516c.1464844.1464844.3383789.2197266.5302734.2197266s.3837891-.0732422.5302734-.2197266c.2929688-.2929688.2929688-.7675781 0-1.0605469-.5478516-.5478516-.8491211-1.2753906-.8491211-2.0498047s.3012695-1.5019531.8491211-2.0498047C22.0786133 37.893219 22.0791016 35.1031799 20.3642578 33.3873596zM12.6972656 33.3873596c-.2919922-.2929688-.7675781-.2929688-1.0605469 0s-.2929688.7675781 0 1.0605469c1.1298828 1.1308594 1.1298828 2.9697266 0 4.0996094-1.715332 1.7148438-1.715332 4.5058594 0 6.2207031.1464844.1464844.3383789.2197266.5302734.2197266s.3837891-.0732422.5302734-.2197266c.2929688-.2929688.2929688-.7675781 0-1.0605469-1.1303711-1.1298828-1.1303711-2.9697266 0-4.0996094C14.4116211 37.893219 14.4121094 35.1031799 12.6972656 33.3873596z"></path>
+									</g>
+								</svg>
+								<svg xmlns="http://www.w3.org/2000/svg" id="ac-remote" enable-background="new 0 0 64 64" viewBox="0 0 64 64">
+									<path fill="currentColor" d="M42.68,0H21.32c-1.77,0-3.21,1.45-3.21,3.21v57.58c0,1.78,1.45,3.21,3.21,3.21h21.37c1.77,0,3.21-1.44,3.21-3.21V3.21
+		C45.89,1.45,44.45,0,42.68,0z M29.38,21.28c0.02,0.05,0.01,0.1,0.02,0.16c0.02,0.07,0.04,0.14,0.03,0.23
+		c0,0.06-0.02,0.12-0.03,0.19c-0.02,0.07-0.02,0.13-0.05,0.2c-0.03,0.07-0.08,0.13-0.12,0.2c-0.03,0.04-0.05,0.08-0.08,0.12
+		l-2.96,2.95c-0.02,0.03-0.06,0.04-0.09,0.06c-0.02,0.02-0.04,0.05-0.07,0.07c-0.04,0.03-0.08,0.04-0.12,0.06
+		c-0.03,0.01-0.06,0.03-0.09,0.04c-0.11,0.04-0.23,0.06-0.34,0.06h-0.01c-0.11,0-0.23-0.02-0.34-0.06
+		c-0.02-0.01-0.05-0.02-0.07-0.03c-0.1-0.04-0.21-0.11-0.3-0.2c0,0-0.01,0-0.01-0.01c-0.01-0.01-0.01-0.02-0.02-0.03
+		c-0.04-0.04-0.08-0.08-0.11-0.13c-1.89-2.92-1.89-6.68,0-9.59c0.02-0.03,0.05-0.05,0.07-0.08c0.03-0.02,0.04-0.06,0.06-0.08
+		c0.03-0.03,0.06-0.04,0.08-0.06c0.06-0.04,0.11-0.08,0.18-0.11c0.06-0.03,0.11-0.05,0.18-0.07c0.06-0.02,0.12-0.03,0.2-0.04
+		c0.06,0,0.12-0.01,0.19,0c0.07,0,0.13,0.02,0.2,0.04c0.07,0.01,0.13,0.04,0.2,0.07c0.02,0.01,0.06,0.02,0.08,0.03
+		c0.03,0.02,0.05,0.05,0.08,0.08c0.03,0.02,0.06,0.03,0.09,0.06l2.95,2.95c0.04,0.04,0.05,0.08,0.08,0.12
+		c0.05,0.06,0.1,0.12,0.13,0.2c0.02,0.06,0.03,0.12,0.04,0.2c0.02,0.06,0.04,0.12,0.04,0.19c0,0.08-0.02,0.15-0.03,0.23
+		c-0.01,0.05-0.01,0.1-0.03,0.15C29.16,20.04,29.16,20.7,29.38,21.28z M26.76,26.83c0-0.07,0.02-0.13,0.03-0.2
+		c0.02-0.06,0.05-0.12,0.08-0.19c0.01-0.03,0.01-0.06,0.03-0.09c0.02-0.03,0.05-0.05,0.08-0.08c0.02-0.03,0.03-0.06,0.06-0.09
+		L30,23.23c0.03-0.03,0.07-0.05,0.11-0.07c0.06-0.05,0.13-0.1,0.21-0.14c0.05-0.02,0.11-0.02,0.17-0.04
+		c0.07-0.02,0.14-0.04,0.22-0.04c0.07,0,0.14,0.02,0.22,0.03c0.05,0.01,0.11,0.01,0.17,0.03c0.59,0.21,1.25,0.21,1.85-0.01
+		c0.05-0.02,0.1-0.01,0.15-0.02c0.08-0.01,0.14-0.03,0.23-0.03c0.06,0,0.12,0.02,0.2,0.03c0.06,0.02,0.12,0.03,0.19,0.05
+		c0.07,0.03,0.13,0.08,0.2,0.13c0.04,0.03,0.08,0.04,0.12,0.08l2.95,2.95c0.03,0.02,0.04,0.06,0.06,0.09
+		c0.02,0.02,0.05,0.04,0.07,0.07c0.02,0.03,0.02,0.06,0.04,0.09c0.03,0.06,0.05,0.12,0.07,0.2c0.02,0.06,0.03,0.12,0.04,0.19
+		c0,0.06,0,0.13-0.01,0.2c0,0.06-0.01,0.12-0.03,0.19c-0.02,0.06-0.05,0.12-0.08,0.19c-0.03,0.06-0.06,0.11-0.11,0.17
+		c-0.02,0.03-0.03,0.06-0.05,0.08c-0.02,0.03-0.06,0.04-0.09,0.06c-0.02,0.02-0.04,0.05-0.07,0.07c-1.46,0.95-3.13,1.42-4.8,1.42
+		c-1.66,0-3.33-0.47-4.79-1.41c-0.03-0.02-0.05-0.05-0.07-0.07c-0.03-0.03-0.07-0.04-0.09-0.06c-0.03-0.03-0.04-0.06-0.06-0.08
+		c-0.04-0.05-0.08-0.11-0.11-0.18c-0.03-0.05-0.05-0.11-0.07-0.18c-0.02-0.06-0.03-0.12-0.04-0.2
+		C26.76,26.95,26.75,26.89,26.76,26.83z M36.72,33.36c0-0.57,0.45-1.03,1.03-1.03h4.44c0.58,0,1.03,0.46,1.03,1.03v3.27
+		c0,0.57-0.45,1.03-1.03,1.03h-4.44c-0.58,0-1.03-0.46-1.03-1.03V33.36z M39.42,25.16c-0.04,0.05-0.08,0.09-0.12,0.13
+		c0,0.01-0.01,0.02-0.02,0.03c0,0.01-0.01,0.01-0.01,0.01c-0.09,0.08-0.19,0.16-0.3,0.2c-0.02,0.01-0.05,0.02-0.07,0.03
+		c-0.11,0.04-0.23,0.06-0.34,0.06c0,0,0,0-0.01,0c-0.11,0-0.23-0.02-0.34-0.06c-0.03-0.01-0.06-0.03-0.09-0.04
+		c-0.04-0.02-0.08-0.03-0.12-0.06c-0.03-0.02-0.04-0.05-0.07-0.07c-0.03-0.02-0.07-0.03-0.09-0.06l-2.95-2.95
+		c-0.04-0.04-0.06-0.08-0.09-0.12c-0.04-0.06-0.09-0.12-0.12-0.2c-0.03-0.06-0.03-0.12-0.05-0.2c-0.01-0.06-0.03-0.12-0.03-0.19
+		c0-0.08,0.01-0.15,0.03-0.23c0.01-0.05,0-0.1,0.02-0.16c0.22-0.59,0.22-1.25,0-1.85c-0.02-0.05-0.01-0.1-0.02-0.15
+		c-0.02-0.07-0.03-0.14-0.03-0.23c0-0.06,0.02-0.12,0.03-0.19c0.02-0.07,0.03-0.13,0.05-0.2c0.03-0.07,0.08-0.12,0.12-0.19
+		c0.03-0.04,0.05-0.09,0.09-0.13l2.95-2.95c0.02-0.03,0.06-0.04,0.09-0.06c0.03-0.02,0.04-0.05,0.07-0.07
+		c0.03-0.02,0.06-0.02,0.09-0.04c0.06-0.03,0.12-0.05,0.2-0.07c0.06-0.02,0.12-0.03,0.19-0.04c0.07,0,0.12,0,0.2,0.01
+		c0.06,0,0.13,0.01,0.2,0.03c0.06,0.02,0.11,0.05,0.17,0.07c0.07,0.04,0.12,0.07,0.19,0.12c0.02,0.02,0.05,0.03,0.07,0.05
+		c0.03,0.03,0.04,0.06,0.06,0.09c0.02,0.03,0.06,0.04,0.08,0.08C41.3,18.48,41.3,22.25,39.42,25.16z M37.24,13.89
+		c0,0.07-0.02,0.13-0.03,0.2c-0.02,0.06-0.04,0.12-0.08,0.2c-0.01,0.02-0.01,0.05-0.03,0.08c-0.03,0.05-0.07,0.09-0.11,0.13
+		c-0.01,0.01-0.01,0.03-0.02,0.04l-2.93,2.92L34,17.5c-0.03,0.03-0.07,0.05-0.11,0.07c-0.06,0.05-0.12,0.1-0.21,0.14
+		c-0.05,0.02-0.11,0.03-0.18,0.04c-0.06,0.02-0.13,0.04-0.21,0.04c-0.01,0-0.02,0-0.02,0c-0.07,0-0.13-0.02-0.21-0.03
+		c-0.05-0.01-0.09-0.01-0.14-0.02c-0.6-0.22-1.26-0.22-1.85-0.01c-0.12,0.05-0.24,0.06-0.35,0.06c-0.12,0-0.25-0.02-0.35-0.06
+		c-0.04-0.01-0.07-0.03-0.1-0.05c-0.08-0.04-0.15-0.08-0.23-0.14c-0.01-0.02-0.04-0.02-0.05-0.04l-2.95-2.95
+		c-0.03-0.03-0.04-0.06-0.06-0.09c-0.03-0.03-0.06-0.05-0.08-0.08c-0.02-0.03-0.02-0.06-0.03-0.08c-0.03-0.07-0.06-0.13-0.08-0.2
+		c-0.01-0.06-0.03-0.12-0.03-0.2c-0.01-0.06,0-0.12,0-0.19c0.01-0.07,0.02-0.13,0.04-0.2c0.02-0.06,0.04-0.11,0.07-0.18
+		c0.03-0.06,0.07-0.12,0.11-0.18c0.02-0.02,0.03-0.05,0.06-0.08c0.02-0.02,0.06-0.03,0.09-0.06c0.02-0.02,0.04-0.05,0.07-0.07
+		c2.91-1.88,6.67-1.88,9.58,0c0.03,0.02,0.05,0.05,0.08,0.07c0.03,0.03,0.06,0.04,0.09,0.06c0.02,0.03,0.03,0.06,0.05,0.08
+		c0.04,0.05,0.08,0.11,0.11,0.18c0.03,0.06,0.05,0.11,0.07,0.18c0.02,0.06,0.03,0.12,0.04,0.2C37.25,13.77,37.25,13.83,37.24,13.89z
+		 M20.78,5.33c0-0.58,0.45-1.03,1.03-1.03h4.44c0.58,0,1.03,0.45,1.03,1.03v3.26c0,0.57-0.45,1.03-1.03,1.03h-4.44
+		c-0.58,0-1.03-0.46-1.03-1.03V5.33z M20.77,33.36c0-0.57,0.46-1.03,1.03-1.03h4.45c0.57,0,1.03,0.46,1.03,1.03v3.27
+		c0,0.57-0.46,1.03-1.03,1.03H21.8c-0.57,0-1.03-0.46-1.03-1.03V33.36z M27.28,40.71v3.27c0,0.57-0.45,1.03-1.03,1.03h-4.44
+		c-0.58,0-1.03-0.46-1.03-1.03v-3.27c0-0.57,0.45-1.03,1.03-1.03h4.44C26.83,39.68,27.28,40.14,27.28,40.71z M27.29,51.33
+		c0,0.57-0.46,1.03-1.03,1.03h-4.45c-0.57,0-1.03-0.46-1.03-1.03v-3.27c0-0.57,0.46-1.03,1.03-1.03h4.45c0.57,0,1.03,0.46,1.03,1.03
+		V51.33z"></path>
+								</svg>
+							</span>
+							<p>Comando Infravermelho</p>
+						</div>
+						<div class="feature">
+							<span class="icon">🛜</span>
+							<p>WiFi Automático</p>
+						</div>
+					</div>
+
+					<div class="promo-details">
+						<div class="details-card">
+							<h2>Instalação inclui</h2>
+							<ul class="details-list">
+								<li>Instalação até 4 metros entre máquinas</li>
+								<li>1 Furo exterior</li>
+								<li>Linhas de cobre 1/4, 3/8</li>
+								<li>Cabo comunicação</li>
+								<li>Cabo alimentação elétrica</li>
+								<li>Kit base PVC</li>
+							</ul>
+						</div>
+
+						<div class="details-card details-card--info"><ul>
+							<ul>
+								
+									<li><strong>Campanha válida de 02/04 até 24/04, Ou enquanto durar nossos stocks.</strong></li>
+									<li><strong>Promoção Válida até 25km do armazém. <a href="https://maps.app.goo.gl/XBptjH7K5Qx9HbfZA" class="amadora-link" target="_blank" rel="noopener">Amadora</a> </strong></li>
+							</ul>
+							<div class="promo-divider"></div>
+
+							<p><strong>Serviços não inclusos:</strong></p>
+							<ul class="exclusions-list">
+								<li>Andaimes ou plataformas elevatorias</li>
+								<li>Trabalhos de construção civil</li>
+								<li>Trabalhos em altura com cordas</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Conteúdo principal da página. -->
+		<main id="topo">
+			<!-- Hero principal; a foto lateral é controlada exclusivamente pelo CSS em .hero-visual. -->
+			<section class="hero">
+				<div class="container hero-grid">
+					<div>
+						<p class="eyebrow">Climatização Profissional</p>
+						<h1>Soluções em Ar Condicionado para casas, apartamentos e empresas</h1>
+						<p>
+							Instalação, higienização e reparação com foco em eficiência,
+							conforto e confiança.
+						</p>
+						<a href="#formulario" class="btn">Pedir Orçamento</a>
+					</div>
+					<div class="hero-visual" aria-hidden="true"></div>
+				</div>
+			</section>
+
+			<!-- Secção institucional sobre a empresa. -->
+			<section id="sobre" class="section">
+				<div class="container about-grid">
+					<div class="about-story">
+						<div class="about-image-wrap">
+							       <img src="img/projetos/imgGerais/img7.jpeg" alt="Técnico da Medida Vibrante a realizar instalação de ar condicionado" loading="lazy" />
+						</div>
+						<div class="about-copy">
+							<p class="eyebrow">Sobre Nós</p>
+							<h2>Medida Vibrante Lda</h2>
+							<p>
+								Somos uma empresa especializada e certificada com <a href="https://www.impic.pt/impic/pt-pt/" target="_blank" id="link-alvara">Alvará IMPIC Nº 118847-PUB — verificação oficial no portal do IMPIC</a>. <br> Ar condicionado e soluções térmicas. Trabalhamos com
+								rigor técnico e com técnicos Certificados em gases fluorados.
+								Compromisso com prazos e foco total na satisfação de nossos
+								clientes.
+							</p>
+							<p>
+								Atuamos em Lisboa e na Margem Sul, com uma equipa responsável e
+								preparada para instalação e manutenção, higienização e reparação
+								de equipamentos de climatização.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Secção de projetos; o JavaScript preenche o preview e abre a galeria ao clicar. -->
+			<section id="projetos" class="section section-dark">
+				<div class="container">
+					<div class="section-head">
+						<p class="eyebrow">Projetos Realizados</p>
+						<h2>Alguns trabalhos da Medida Vibrante</h2>
+						<p>
+							Veja os álbuns abaixo e abra o trabalho que quiser explorar.
+						</p>
+					</div>
+					<!-- O conteúdo desta grelha é renderizado em renderProjects(), em js/script.js. -->
+					<div id="preview-grid" class="project-grid"></div>
+					<button
+						type="button"
+						id="open-full-gallery"
+						class="gallery-more"
+						aria-label="Abrir galeria completa"
+					>
+						<span>galeria completa..</span>
+						<span class="gallery-more-icon" aria-hidden="true">→</span>
+					</button>
+				</div>
+			</section>
+
+			<!-- Lista dos serviços com faixa em movimento contínuo. -->
+			<section id="servicos" class="section">
+				<div class="container">
+					<div class="section-head">
+						<p class="eyebrow">Serviços Prestados</p>
+						<h2>Especialistas em climatização</h2>
+					</div>
+
+					<div
+						class="services-marquee"
+						aria-label="Lista de serviços da empresa"
+					>
+						<!-- O JavaScript duplica os serviços aqui para criar o efeito de marquee infinito. -->
+						<div class="marquee-track" id="marquee-track"></div>
+					</div>
+
+					<a href="#formulario" class="btn btn-subtle">
+						Para mais informações não hesite em contactar-nos
+					</a>
+				</div>
+			</section>
+
+			<!-- Formulário comercial; o envio é transformado em mensagem de WhatsApp pelo JavaScript. -->
+			<section id="formulario" class="section section-dark">
+				<div class="container">
+					<div class="section-head">
+						<p class="eyebrow">Pedido de Contacto</p>
+						<h2>Informação do Cliente</h2>
+					</div>
+
+					<form id="contact-form" class="contact-form">
+						<label class="field-group"
+							>Nome completo
+							<input type="text" name="nome" required />
+						</label>
+
+						<label class="field-group"
+							>NIF
+							<input
+								type="text"
+								id="nif"
+								name="nif"
+								inputmode="numeric"
+								maxlength="9"
+								required
+							/>
+							<small id="nif-feedback" class="field-feedback" aria-live="polite"></small>
+						</label>
+
+						<label class="field-group"
+							>Email
+							<input type="email" id="email" name="email" required />
+							<small id="email-feedback" class="field-feedback" aria-live="polite"></small>
+						</label>
+
+						<label class="field-group phone-group"
+							>Telefone
+							<!-- Campo composto: país/código à esquerda e número à direita, sem quebrar o layout. -->
+							<div class="phone-field" id="phone-field">
+								<button
+									type="button"
+									id="phone-country-button"
+									class="phone-country-button"
+									aria-haspopup="dialog"
+									aria-expanded="false"
+									aria-controls="phone-country-panel"
+								>
+									<span id="phone-country-flag" class="phone-country-flag">🇵🇹</span>
+									<span id="phone-country-code" class="phone-country-code">+351</span>
+								</button>
+								<input
+									type="tel"
+									id="phone-number"
+									inputmode="tel"
+									autocomplete="tel-national"
+									placeholder="Número de telefone"
+									required
+								/>
+								<input type="hidden" id="telefone" name="telefone" />
+								<input type="hidden" id="phone-country" value="PT" />
+							</div>
+							<div
+								id="phone-country-panel"
+								class="phone-country-panel"
+								hidden
+							>
+								<input
+									type="search"
+									id="phone-country-search"
+									class="phone-country-search"
+									placeholder="Search country / procurar país"
+									autocomplete="off"
+								/>
+								<div id="phone-country-list" class="phone-country-list"></div>
+							</div>
+							<small id="phone-feedback" class="field-feedback" aria-live="polite"></small>
+						</label>
+
+						<label
+							>Serviço pretendido
+							<!-- As opções deste select são inseridas em populateServiceSelect(), no JS. -->
+							<select name="servico" id="servico-select" required></select>
+						</label>
+
+						<label
+							>Marca de preferência
+							<select name="marca" required>
+								<option value="" disabled selected>Selecionar</option>
+								<option>Daikin</option>
+								<option>Mitsubishi</option>
+								<option>LG</option>
+								<option>Samsung</option>
+								<option>Haier</option>
+								<option>Giatsu</option>
+								<option>Toytomy</option>
+								<option>GREE</option>
+								<option>Nipon</option>
+								<option>BAUF</option>
+								<option>Não tenho conhecimento sobre marcas</option>
+								<option>Não tenho preferência, Pode me indicar por favor</option>
+							</select>
+						</label>
+
+						<p class="privacy-note full">
+							Os dados fornecidos neste formulário são utilizados apenas para
+							contacto e prestação do serviço solicitado. Após o envio, os dados
+							são encaminhados para contacto via WhatsApp e não são armazenados
+							neste website.
+						</p>
+
+						<label class="check full">
+							<input
+								type="radio"
+								name="privacy_consent"
+								value="accepted"
+								required
+							/>
+							<span>
+								Li e aceito a
+								<a href="/politica-privacidade" target="_blank"
+									>Política de Privacidade</a
+								>
+							</span>
+						</label>
+
+						<button class="btn full" type="submit">Enviar pelo WhatsApp</button>
+					</form>
+				</div>
+			</section>
+
+			<!-- Área de avaliações; o JS gere a seleção de estrelas e a ligação ao Firebase. -->
+			<section id="avaliacoes" class="section">
+				<div class="container">
+					<div class="section-head">
+						<p class="eyebrow">Avaliações</p>
+						<h2>Deixe a sua avaliação</h2>
+					</div>
+
+					<form id="review-form" class="review-form">
+						<label
+							>Nome
+							<input type="text" name="review_nome" required />
+						</label>
+
+						<label class="full"
+							>Comentário
+							<textarea
+								name="review_comentario"
+								rows="4"
+								required
+								placeholder="Partilhe a sua experiência"
+							></textarea>
+						</label>
+
+						<label class="full">Estrelas (1 a 5)</label>
+						<div
+							class="rating full"
+							id="review-rating"
+							role="radiogroup"
+							aria-label="Classificação em estrelas"
+						>
+							<button
+								type="button"
+								class="star"
+								data-value="1"
+								aria-label="1 estrela"
+							>
+								★
+							</button>
+							<button
+								type="button"
+								class="star"
+								data-value="2"
+								aria-label="2 estrelas"
+							>
+								★
+							</button>
+							<button
+								type="button"
+								class="star"
+								data-value="3"
+								aria-label="3 estrelas"
+							>
+								★
+							</button>
+							<button
+								type="button"
+								class="star"
+								data-value="4"
+								aria-label="4 estrelas"
+							>
+								★
+							</button>
+							<button
+								type="button"
+								class="star"
+								data-value="5"
+								aria-label="5 estrelas"
+							>
+								★
+							</button>
+						</div>
+						<!-- Campo oculto atualizado pelo JS quando o utilizador escolhe a quantidade de estrelas. -->
+						<input
+							type="hidden"
+							id="review_stars"
+							name="review_stars"
+							value="0"
+						/>
+
+						<button class="btn full" type="submit">Publicar comentário</button>
+					</form>
+
+					<div
+						id="reviews-status"
+						class="reviews-status"
+						aria-live="polite"
+					></div>
+					<!-- Lista de comentários renderizada dinamicamente a partir do Firestore. -->
+					<div id="reviews-list" class="reviews-list"></div>
+				</div>
+			</section>
+
+			<!-- Cobertura geográfica da empresa. -->
+			<section id="zonas" class="section section-dark">
+				<div class="container">
+					<div class="section-head">
+						<p class="eyebrow">Zonas Atendidas</p>
+						<h2>Lisboa e Margem Sul com técnicos locais</h2>
+					</div>
+					<div class="zones-grid">
+						<article>
+							<h3>Lisboa</h3>
+							<ul>
+								<li>Lisboa</li>
+								<li>Amadora</li>
+								<li>Loures</li>
+								<li>Odivelas</li>
+								<li>Benfica</li>
+								<li>Algés</li>
+								<li>Oeiras</li>
+								<li>Cacém</li>
+								<li>Sintra</li>
+								<li>Cascais</li>
+								<li>Belém</li>
+								<li>Restelo</li>
+								<li>Ajuda</li>
+								<li>Alcântara</li>
+								<li>Santos</li>
+								<li>Príncipe Real</li>
+								<li>Marquês de Pombal</li>
+								<li>Avenidas Novas</li>
+								<li>Alvalade</li>
+								<li>Lumiar</li>
+								<li>Olivais</li>
+							</ul>
+						</article>
+						<article>
+							<h3>Margem Sul</h3>
+							<ul>
+								<li>Almada</li>
+								<li>Seixal</li>
+								<li>Barreiro</li>
+								<li>Moita</li>
+								<li>Setúbal</li>
+								<li>Montijo</li>
+								<li>Alcochete</li>
+								<li>Corroios</li>
+								<li>Pragal</li>
+								<li>Cacilhas</li>
+								<li>Trafaria</li>
+								<li>Costa da Caparica</li>
+								<li>Charneca de Caparica</li>
+								<li>Sobreda</li>
+								<li>Fernão Ferro</li>
+								<li>Sesimbra</li>
+							</ul>
+						</article>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Rodapé com o ano atual, preenchido em init(), no JavaScript. -->
+		<footer class="site-footer">
+			<div class="container">
+				<h3 class="footer-social-title">SIGA-NOS NAS NOSSAS REDES SOCIAIS</h3>
+				<div class="footer-social-links">
+					<a
+						href="https://www.facebook.com/share/1DbtFDYFV8/?mibextid=wwXIfr"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="footer-social-link"
+						aria-label="Abrir página de Facebook da Medida Vibrante"
+					>
+						<span>Facebook</span>
+						<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+							<path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.6 1.6-1.6h1.7V4.8c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.4-4 4.2V11H8v3h2.4v8h3.1Z"></path>
+						</svg>
+					</a>
+					<a
+						href="https://www.zaask.pt/user/ivorenatocastro"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="footer-social-link"
+						aria-label="Abrir perfil da Medida Vibrante na Zaask"
+					>
+						<span>Medida Vibrante</span>
+						   <img src="img/svg/zaask.svg" alt="Zaask" width="24" height="24" loading="lazy" />
+					</a>
+					<a
+						href="#"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="footer-social-link"
+						aria-label="Abrir página de Instagram da Medida Vibrante"
+					>
+						<span>Instagram</span>
+						<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+							<path d="M7.5 3h9A4.5 4.5 0 0 1 21 7.5v9a4.5 4.5 0 0 1-4.5 4.5h-9A4.5 4.5 0 0 1 3 16.5v-9A4.5 4.5 0 0 1 7.5 3Zm0 1.8A2.7 2.7 0 0 0 4.8 7.5v9a2.7 2.7 0 0 0 2.7 2.7h9a2.7 2.7 0 0 0 2.7-2.7v-9a2.7 2.7 0 0 0-2.7-2.7h-9Zm9.45 1.35a1.05 1.05 0 1 1 0 2.1 1.05 1.05 0 0 1 0-2.1ZM12 7.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 1.8A2.7 2.7 0 1 0 14.7 12 2.7 2.7 0 0 0 12 9.3Z"></path>
+						</svg>
+					</a>
+				</div>
+				<p>
+					© <span id="year"></span> Medida Vibrante Lda. Todos os direitos
+					reservados.
+				</p>
+			</div>
+		</footer>
+
+		<!-- Modal da galeria completa dos projetos, controlada por openGallery() e closeGallery(). -->
+		<div id="lightbox" class="lightbox" aria-hidden="true">
+			<button
+				class="lightbox-close"
+				id="close-lightbox"
+				aria-label="Fechar galeria"
+			>
+				×
+			</button>
+			<div class="lightbox-panel">
+				<div class="gallery-toolbar">
+					<div class="gallery-copy">
+						<p id="gallery-subtitle" class="gallery-subtitle">
+							Escolha um álbum para ver o trabalho completo.
+						</p>
+						<h3 id="gallery-title" class="gallery-title">
+							Galeria de Trabalhos
+						</h3>
+					</div>
+					<button
+						type="button"
+						id="gallery-back"
+						class="gallery-back"
+						hidden
+					>
+						← Voltar aos álbuns
+					</button>
+				</div>
+				<div id="gallery-grid" class="gallery-grid"></div>
+			</div>
+		</div>
+		<!-- Modal de ampliação de uma única fotografia da galeria. -->
+		<div id="photo-lightbox" class="photo-lightbox" aria-hidden="true">
+			<button
+				type="button"
+				class="photo-lightbox-nav photo-lightbox-prev"
+				id="photo-lightbox-prev"
+				aria-label="Ver foto anterior"
+			>
+				‹
+			</button>
+			<button
+				type="button"
+				class="photo-lightbox-nav photo-lightbox-next"
+				id="photo-lightbox-next"
+				aria-label="Ver próxima foto"
+			>
+				›
+			</button>
+			<button
+				class="photo-lightbox-close"
+				id="close-photo-lightbox"
+				aria-label="Fechar fotografia"
+			>
+				×
+			</button>
+			<img
+				id="photo-lightbox-image"
+				src=""
+				alt="Fotografia ampliada do projeto"
+			/>
+		</div>
+
+		<!-- Configuração externa do Firebase. -->
+		<script src="js/firebase-config.js"></script>
+		<!-- Lógica principal do site: tema, menu mobile, galeria, formulário e avaliações. -->
+		<script type="module" src="js/script.js"></script>
+		<!-- Sugestão: Adicionar script de botão fixo do WhatsApp para conversão -->
+		<!-- <script src="js/whatsapp-float.js"></script> -->
+	</body>
+</html>
