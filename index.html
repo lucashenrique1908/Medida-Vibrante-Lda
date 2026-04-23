@@ -25,11 +25,11 @@
 				<!-- A imagem do logótipo é trocada pelo JavaScript em applyTheme(), em js/script.js. -->
 				   <div class="logo-title-wrap">
 					   <a href="#topo" class="logo" aria-label="Medida Vibrante Lda">
-						   <img
-							   id="brand-logo"
-							   src="img/projetos/imgGerais/slogan.png"
-							   alt="Slogan da Medida Vibrante Lda"
-						   />
+						<img
+							id="brand-logo"
+							src="img/projetos/imgGerais/slogan.png"
+							alt="Slogan da Medida Vibrante Lda"
+						/>
 						   <span class="company-name">Medida Vibrante Lda</span>
 					   </a>
 					   <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema" title="Alternar tema" style="background: none; border: none; cursor: pointer; margin-left: 0.18rem; display: flex; align-items: center; justify-content: center;">
@@ -80,59 +80,46 @@
 						</p>
 					</div>
 
-					<div class="promo-hero">
-						<div class="promo-product">
-							<div class="promo-images-grid">
-							<div class="product-card"><img src="img/imgPromo/img9.webp" alt="Imagem promocional 1" class="promo-img" /></div>
-							<div class="product-card"><img src="img/imgPromo/img6.png" alt="Imagem promocional 2" class="promo-img" /></div>
-							<div class="product-card"><img src="img/imgPromo/imgbauf4.webp" alt="Imagem promocional 3" class="promo-img" /></div>
-							<div class="product-card"><img src="img/imgPromo/imgbauf5.webp" alt="Imagem promocional 4" class="promo-img" /></div>
+					<div class="promo-layout">
+						<div class="promo-main">
+							<div class="promo-hero">
+								<div class="promo-product">
+									<div class="promo-image-full">
+										<img src="img/imgPromo/Adobe Express - file.png" alt="Ar condicionado mural Exclusive Plus" class="promo-img" />
+									</div>
+								</div>
 							</div>
-							
-								<defs>
-									<linearGradient id="unitBody" x1="0%" y1="0%" x2="100%" y2="100%">
-										<stop offset="0%" stop-color="#fafdff" />
-										<stop offset="100%" stop-color="#d7eaf8" />
-									</linearGradient>
-									<linearGradient id="airFlow" x1="0%" y1="0%" x2="100%" y2="0%">
-										<stop offset="0%" stop-color="#49b8ff" stop-opacity="0.85" />
-										<stop offset="100%" stop-color="#8df0cd" stop-opacity="0.3" />
-									</linearGradient>
-								</defs>
-
-								<rect x="80" y="60" width="480" height="130" rx="28" fill="url(#unitBody)" />
-								<rect x="110" y="92" width="300" height="18" rx="9" fill="#d7ecf9" />
-								<rect x="110" y="124" width="240" height="10" rx="5" fill="#c4dceb" />
-								<circle cx="500" cy="125" r="18" fill="#0f6ba8" opacity="0.95" />
-								<circle cx="500" cy="125" r="7" fill="#eefaff" />
-								<path d="M100 200 C180 220, 250 220, 320 200" stroke="url(#airFlow)" stroke-width="14" fill="none" stroke-linecap="round" />
-								<path d="M200 230 C290 255, 390 255, 500 228" stroke="url(#airFlow)" stroke-width="12" fill="none" stroke-linecap="round" />
-								<path d="M150 265 C240 300, 360 300, 470 262" stroke="url(#airFlow)" stroke-width="10" fill="none" stroke-linecap="round" />
-							</svg>
-						</div>
-
-						<div class="promo-summary">
-							<div class="modelo-badge" aria-label="Classe energetica A mais mais">
-								<strong>BAUF</strong>
-								<span class="energy-label">Potência: 9.000 BTUS</span>
-								<span class="energy-label">Modelo: Momentum</span>
-								<span class="energy-label">Cor: Preto ou Branco</span>
+							<!-- esse é o codigo do website que fiz a 3 semanas, a questao aqui eu quero é. na seção de promo, a foto do ar condicioando que eu mandei no ultimo prompt eu quero que ela fica isolada, igual esta nesse codigo, eu fiz um codigo em css mas nao lembro qual pra isso funcionar... quero que apareca somente o ar condicionado no site, sem o fundo.... me explique como e por ultimo faz um prompt pra eu pedir a ia pra fazer... 
+							 -->
+							<div class="promo-info-panel">
+								<div class="promo-info-copy">
+									<h2>AR CONDICIONADO MURAL EXCLUSIVE PLUS</h2>
+									<div class="promo-topic">
+										<h3>Auto-limpeza</h3>
+										<p>Impede a acumulação de sujidade e humidade no interior do equipamento, evitando a propagação de bactérias, ácaros e mofo.</p>
+									</div>
+									<div class="promo-topic">
+										<h3>Modo ECO</h3>
+										<p>Reduz o consumo de energia, ajustando de forma automática o funcionamento para garantir mais conforto, eficiência e menor desperdício.</p>
+									</div>
+									<div class="promo-topic">
+										<h3>Super Silencioso (19dB)</h3>
+										<p>Reduz significativamente o fluxo de ar da unidade interior, diminuindo consequentemente o nível de ruído sonoro.</p>
+									</div>
+									<div class="promo-topic">
+										<h3>Modo Fell</h3>
+										<p>Ajuste personalizado da temperatura e velocidade do ar, para um ambiente mais confortável e acolhedor.</p>
+									</div>
+									<div class="promo-topic">
+										<h3>Modo Turbo</h3>
+										<p>Capacidade de atingir uma maior velocidade de ventilação, permitindo alcançar a temperatura desejada (arrefecimento) em menos tempo.</p>
+									</div>
+									<div class="promo-topic">
+										<h3>Fácil Instalação e Manutenção</h3>
+										<p>Conta com painel de limpeza simples, aberturas de ventilação facilmente removíveis e tubagem de 2 vias, garantindo rapidez e simplicidade.</p>
+									</div>
+								</div>
 							</div>
-							<div class="energy-badge" aria-label="Classe energetica A mais mais">
-								<!-- <span class="energy-label">Bauf 9.000 BTUS</span>
-								<span class="energy-label">Modelo: Momentum</span>
-								<span class="energy-label">Cor: Preto ou Branco</span> -->
-								<span class="energy-label">Classe Energética</span>
-								<strong>A++</strong>
-							</div>
-
-							<div class="promo-price-block">
-								<span class="price-label">Preço promocional</span>
-								<div class="promo-price">760€</div>
-								<p class="price-note">Instalação base incluida</p>
-							</div>
-						</div>
-					</div>
 
 					<div class="features-grid" aria-label="Funcionalidades principais">
 						<div class="feature active">
@@ -215,25 +202,31 @@
 							<p>WiFi Automático</p>
 						</div>
 					</div>
-
-					<div class="promo-details">
-						<div class="details-card">
-							<h2>Instalação inclui</h2>
-							<ul class="details-list">
-								<li>Instalação até 4 metros entre máquinas</li>
-								<li>1 Furo exterior</li>
-								<li>Linhas de cobre 1/4, 3/8</li>
-								<li>Cabo comunicação</li>
-								<li>Cabo alimentação elétrica</li>
-								<li>Kit base PVC</li>
-							</ul>
 						</div>
 
-						<div class="details-card details-card--info"><ul>
-							<ul>
-								
-									<li><strong>Campanha válida de 02/06 até 24/06, Ou enquanto durar nossos stocks.</strong></li>
-									<li><strong>Promoção Válida até 25km do armazém. <a href="https://maps.app.goo.gl/XBptjH7K5Qx9HbfZA" class="amadora-link" target="_blank" rel="noopener">Amadora</a> </strong></li>
+						<aside class="promo-summary">
+							<div class="modelo-badge" aria-label="Marca e potência do equipamento">
+								<span class="energy-label">Marca</span>
+								<strong>O2</strong>
+								<span class="energy-label">Potência: 9.000 BTUS</span>
+							</div>
+							<div class="energy-badge" aria-label="Classe energetica A mais mais mais">
+								<span class="energy-label">Classe Energética</span>
+								<strong>A+++</strong>
+							</div>
+							<div class="promo-price-block">
+								<span class="price-label">Preço</span>
+								<div class="promo-price">720€</div>
+								<p class="price-note">Já com IVA e instalação incluída</p>
+							</div>
+						</aside>
+					</div>
+
+					<div class="promo-details">
+						<div class="details-card details-card--info">
+							<ul class="campaign-list">
+								<li><strong>Campanha válida de 27/04 até 27/05, Ou enquanto durar nossos stocks.</strong></li>
+								<li><strong>Promoção Válida até 25km do armazém. <a href="https://maps.app.goo.gl/XBptjH7K5Qx9HbfZA" class="amadora-link" target="_blank" rel="noopener">Amadora</a> </strong></li>
 							</ul>
 							<div class="promo-divider"></div>
 
@@ -561,6 +554,12 @@
 					<!-- Lista de comentários renderizada dinamicamente a partir do Firestore. -->
 					<div id="reviews-list" class="reviews-list"></div>
 				</div>
+			</section>
+
+			<!-- Avaliações verificadas da Zaask -->
+			<section class="zaask-reviews">
+				<h2>Avaliações verificadas da Zaask</h2>
+				<div id="zaask-reviews-container"></div>
 			</section>
 
 			<!-- Cobertura geográfica da empresa. -->

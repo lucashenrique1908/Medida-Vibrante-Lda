@@ -441,39 +441,41 @@ const navActions = document.querySelector(".nav-actions");
 
 // --- Alternância de Tema Claro/Escuro ---
 
-const themeToggleBtn = document.getElementById('theme-toggle');
+const themeToggleBtn = document.getElementById("theme-toggle");
 const body = document.body;
 const sunSVG = `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="5" fill="#ffd34f"/><g stroke="#ffd34f" stroke-width="1.5"><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></g></svg>`;
 const moonSVG = `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 15.5A9 9 0 0 1 8.5 3a.5.5 0 0 0-.5.5A9 9 0 1 0 21 15.5Z" fill="#ffd34f"/></svg>`;
 
 function setTheme(theme) {
 	if (!themeToggleBtn) return;
-	if (theme === 'light') {
-		body.classList.add('theme-light');
+	if (theme === "light") {
+		body.classList.add("theme-light");
 		themeToggleBtn.innerHTML = moonSVG;
-		localStorage.setItem('theme', 'light');
+		localStorage.setItem("theme", "light");
 	} else {
-		body.classList.remove('theme-light');
+		body.classList.remove("theme-light");
 		themeToggleBtn.innerHTML = sunSVG;
-		localStorage.setItem('theme', 'dark');
+		localStorage.setItem("theme", "dark");
 	}
 }
 
 if (themeToggleBtn) {
 	// Detecta preferência do usuário ou sistema
-	const userTheme = localStorage.getItem('theme');
-	const systemPrefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
-	if (userTheme === 'light' || (!userTheme && systemPrefersLight)) {
-		setTheme('light');
+	const userTheme = localStorage.getItem("theme");
+	const systemPrefersLight = window.matchMedia(
+		"(prefers-color-scheme: light)",
+	).matches;
+	if (userTheme === "light" || (!userTheme && systemPrefersLight)) {
+		setTheme("light");
 	} else {
-		setTheme('dark');
+		setTheme("dark");
 	}
 
-	themeToggleBtn.addEventListener('click', () => {
-		if (body.classList.contains('theme-light')) {
-			setTheme('dark');
+	themeToggleBtn.addEventListener("click", () => {
+		if (body.classList.contains("theme-light")) {
+			setTheme("dark");
 		} else {
-			setTheme('light');
+			setTheme("light");
 		}
 	});
 }
@@ -1474,6 +1476,9 @@ function init() {
 	setupMobileMenu();
 	bindEvents();
 	document.getElementById("year").textContent = new Date().getFullYear();
+
+	// Carrega avaliações da Zaask
+	loadZaaskReviews();
 }
 
 // Animação automática das features do flyer promocional
@@ -1502,3 +1507,90 @@ promoCards.forEach((card) => {
 });
 
 init();
+
+// Carrega e exibe avaliações da Zaask
+async function loadZaaskReviews() {
+	const container = document.getElementById("zaask-reviews-container");
+	if (!container) return;
+
+	container.innerHTML =
+		'<div class="zaask-loading">Carregando avaliações...</div>';
+
+	const urls = [
+		"https://www.zaask.pt/api/v1/profile/reviews/ivorenatocastro",
+		"https://www.zaask.pt/api/v1/profile/reviews/ivorenatocastro?page=2",
+	];
+
+	try {
+		const responses = await Promise.all(urls.map((url) => fetch(url)));
+		const jsons = await Promise.all(
+			responses.map((r) => (r.ok ? r.json() : Promise.reject())),
+		);
+
+		console.log("[Zaask] Respostas da API:", jsons);
+
+		let allReviews = [];
+		for (const json of jsons) {
+			if (json && json.reviews && json.reviews.reviews) {
+				const reviewsObj = json.reviews.reviews;
+				const reviewsArr = Object.values(reviewsObj);
+				allReviews = allReviews.concat(reviewsArr);
+			} else {
+				console.warn("[Zaask] Estrutura inesperada na resposta:", json);
+			}
+		}
+
+		if (!allReviews.length) {
+			container.innerHTML =
+				'<div class="zaask-empty">Ainda não existem avaliações externas.</div>';
+			return;
+		}
+
+		// Ordena por data (mais recente primeiro)
+		allReviews.sort((a, b) => new Date(b.reviewDate) - new Date(a.reviewDate));
+		const top10 = allReviews.slice(0, 10);
+
+		container.innerHTML = "";
+		top10.forEach((review) => {
+			const card = document.createElement("div");
+			card.className = "zaask-review-card";
+
+			// Nome
+			const name = document.createElement("h3");
+			name.textContent = review.reviewerInfo?.name || "Cliente Zaask";
+
+			// Estrelas
+			const stars = document.createElement("div");
+			stars.className = "stars";
+			const starCount = Math.round(Number(review.rating) || 0);
+			stars.innerHTML = "★".repeat(starCount) + "☆".repeat(5 - starCount);
+
+			// Comentário
+			const comment = document.createElement("p");
+			comment.textContent = review.comment || "";
+
+			// Data
+			const date = document.createElement("div");
+			date.className = "review-date";
+			if (review.reviewDate) {
+				const d = new Date(review.reviewDate);
+				date.textContent = d.toLocaleDateString("pt-PT", {
+					year: "numeric",
+					month: "short",
+					day: "numeric",
+				});
+			}
+
+			card.appendChild(name);
+			card.appendChild(stars);
+			card.appendChild(comment);
+			if (review.reviewDate) card.appendChild(date);
+
+			container.appendChild(card);
+		});
+	} catch (e) {
+		console.error("[Zaask] Erro ao carregar avaliações:", e);
+		container.innerHTML =
+			'<div class="zaask-error">Não foi possível carregar avaliações externas.</div>';
+	}
+}
