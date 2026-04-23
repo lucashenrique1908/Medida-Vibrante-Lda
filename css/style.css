@@ -376,6 +376,12 @@
 	color: #111 !important;
 }
 
+.theme-light .promo-info-copy h2,
+.theme-light .promo-topic h3,
+.theme-light .promo-topic p {
+	color: #111 !important;
+}
+
 .theme-light .promo-images-grid {
 	background: #0f1a2b !important;
 	border-radius: 12px;
