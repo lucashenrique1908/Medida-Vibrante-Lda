@@ -1476,9 +1476,6 @@ function init() {
 	setupMobileMenu();
 	bindEvents();
 	document.getElementById("year").textContent = new Date().getFullYear();
-
-	// Carrega avaliações da Zaask
-	loadZaaskReviews();
 }
 
 // Animação automática das features do flyer promocional
@@ -1507,90 +1504,3 @@ promoCards.forEach((card) => {
 });
 
 init();
-
-// Carrega e exibe avaliações da Zaask
-async function loadZaaskReviews() {
-	const container = document.getElementById("zaask-reviews-container");
-	if (!container) return;
-
-	container.innerHTML =
-		'<div class="zaask-loading">Carregando avaliações...</div>';
-
-	const urls = [
-		"https://www.zaask.pt/api/v1/profile/reviews/ivorenatocastro",
-		"https://www.zaask.pt/api/v1/profile/reviews/ivorenatocastro?page=2",
-	];
-
-	try {
-		const responses = await Promise.all(urls.map((url) => fetch(url)));
-		const jsons = await Promise.all(
-			responses.map((r) => (r.ok ? r.json() : Promise.reject())),
-		);
-
-		console.log("[Zaask] Respostas da API:", jsons);
-
-		let allReviews = [];
-		for (const json of jsons) {
-			if (json && json.reviews && json.reviews.reviews) {
-				const reviewsObj = json.reviews.reviews;
-				const reviewsArr = Object.values(reviewsObj);
-				allReviews = allReviews.concat(reviewsArr);
-			} else {
-				console.warn("[Zaask] Estrutura inesperada na resposta:", json);
-			}
-		}
-
-		if (!allReviews.length) {
-			container.innerHTML =
-				'<div class="zaask-empty">Ainda não existem avaliações externas.</div>';
-			return;
-		}
-
-		// Ordena por data (mais recente primeiro)
-		allReviews.sort((a, b) => new Date(b.reviewDate) - new Date(a.reviewDate));
-		const top10 = allReviews.slice(0, 10);
-
-		container.innerHTML = "";
-		top10.forEach((review) => {
-			const card = document.createElement("div");
-			card.className = "zaask-review-card";
-
-			// Nome
-			const name = document.createElement("h3");
-			name.textContent = review.reviewerInfo?.name || "Cliente Zaask";
-
-			// Estrelas
-			const stars = document.createElement("div");
-			stars.className = "stars";
-			const starCount = Math.round(Number(review.rating) || 0);
-			stars.innerHTML = "★".repeat(starCount) + "☆".repeat(5 - starCount);
-
-			// Comentário
-			const comment = document.createElement("p");
-			comment.textContent = review.comment || "";
-
-			// Data
-			const date = document.createElement("div");
-			date.className = "review-date";
-			if (review.reviewDate) {
-				const d = new Date(review.reviewDate);
-				date.textContent = d.toLocaleDateString("pt-PT", {
-					year: "numeric",
-					month: "short",
-					day: "numeric",
-				});
-			}
-
-			card.appendChild(name);
-			card.appendChild(stars);
-			card.appendChild(comment);
-			if (review.reviewDate) card.appendChild(date);
-
-			container.appendChild(card);
-		});
-	} catch (e) {
-		console.error("[Zaask] Erro ao carregar avaliações:", e);
-		container.innerHTML =
-			'<div class="zaask-error">Não foi possível carregar avaliações externas.</div>';
-	}
-}
