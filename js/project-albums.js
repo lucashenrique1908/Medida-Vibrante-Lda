@@ -122,32 +122,52 @@ export const PROJECT_ALBUMS = [
 		],
 	},
 	{
-		id: "projeto-em-fernao-ferro",
-		title: "Projeto em Fernão Ferro",
+		id: "projeto-em-cascais",
+		title: "Projeto em Cascais",
 		photos: [
 			{
-				src: "img/projetos/Projeto em Fernão Ferro/img1.jpeg",
-				alt: "Projeto em Fernão Ferro - foto 1",
+				src: "img/projetos/Projeto em cascais/img5.jpeg",
+				alt: "Projeto em Cascais - foto 5",
 			},
 			{
-				src: "img/projetos/Projeto em Fernão Ferro/img2.jpeg",
-				alt: "Projeto em Fernão Ferro - foto 2",
+				src: "img/projetos/Projeto em cascais/img1.jpeg",
+				alt: "Projeto em Cascais - foto 1",
 			},
 			{
-				src: "img/projetos/Projeto em Fernão Ferro/img3.jpeg",
-				alt: "Projeto em Fernão Ferro - foto 3",
+				src: "img/projetos/Projeto em cascais/img2.jpeg",
+				alt: "Projeto em Cascais - foto 2",
 			},
 			{
-				src: "img/projetos/Projeto em Fernão Ferro/img4.jpeg",
-				alt: "Projeto em Fernão Ferro - foto 4",
+				src: "img/projetos/Projeto em cascais/img3.jpeg",
+				alt: "Projeto em Cascais - foto 3",
 			},
 			{
-				src: "img/projetos/Projeto em Fernão Ferro/img5.jpeg",
-				alt: "Projeto em Fernão Ferro - foto 5",
+				src: "img/projetos/Projeto em cascais/img4.jpeg",
+				alt: "Projeto em Cascais - foto 4",
 			},
 			{
-				src: "img/projetos/Projeto em Fernão Ferro/img6.jpeg",
-				alt: "Projeto em Fernão Ferro - foto 6",
+				src: "img/projetos/Projeto em cascais/img6.jpeg",
+				alt: "Projeto em Cascais - foto 6",
+			},
+			{
+				src: "img/projetos/Projeto em cascais/img7.jpeg",
+				alt: "Projeto em Cascais - foto 7",
+			},
+			{
+				src: "img/projetos/Projeto em cascais/img8.jpeg",
+				alt: "Projeto em Cascais - foto 8",
+			},
+			{
+				src: "img/projetos/Projeto em cascais/img9.jpeg",
+				alt: "Projeto em Cascais - foto 9",
+			},
+			{
+				src: "img/projetos/Projeto em cascais/img10.jpeg",
+				alt: "Projeto em Cascais - foto 10",
+			},
+			{
+				src: "img/projetos/Projeto em cascais/img11.jpeg",
+				alt: "Projeto em Cascais - foto 11",
 			},
 		],
 	},
@@ -183,6 +203,36 @@ export const PROJECT_ALBUMS = [
 			{
 				src: "img/projetos/Projeto em Ajuda - Lisboa/img7.jpeg",
 				alt: "Projeto em Ajuda - Lisboa - foto 7",
+			},
+		],
+	},
+	{
+		id: "projeto-em-fernao-ferro",
+		title: "Projeto em Fernão Ferro",
+		photos: [
+			{
+				src: "img/projetos/Projeto em Fernão Ferro/img1.jpeg",
+				alt: "Projeto em Fernão Ferro - foto 1",
+			},
+			{
+				src: "img/projetos/Projeto em Fernão Ferro/img2.jpeg",
+				alt: "Projeto em Fernão Ferro - foto 2",
+			},
+			{
+				src: "img/projetos/Projeto em Fernão Ferro/img3.jpeg",
+				alt: "Projeto em Fernão Ferro - foto 3",
+			},
+			{
+				src: "img/projetos/Projeto em Fernão Ferro/img4.jpeg",
+				alt: "Projeto em Fernão Ferro - foto 4",
+			},
+			{
+				src: "img/projetos/Projeto em Fernão Ferro/img5.jpeg",
+				alt: "Projeto em Fernão Ferro - foto 5",
+			},
+			{
+				src: "img/projetos/Projeto em Fernão Ferro/img6.jpeg",
+				alt: "Projeto em Fernão Ferro - foto 6",
 			},
 		],
 	},

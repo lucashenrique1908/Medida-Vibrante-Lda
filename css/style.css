@@ -318,10 +318,7 @@
 		flex: 1 1 auto;
 	}
 }
-.theme-light .theme-toggle svg path {
-	/* Garante que só a lua é afetada, pois só ela tem <path> no SVG */
-	/* Opcional: pode aumentar o viewBox, mas aqui aumentamos o tamanho visual */
-}
+
 .theme-light .theme-toggle svg {
 	width: 27px !important;
 	height: 27px !important;
@@ -364,6 +361,9 @@
 .theme-light .album-meta,
 .theme-light .album-meta *,
 .theme-light .info {
+	color: #fff !important;
+}
+.theme-light .lightbox .album-count {
 	color: #fff !important;
 }
 .theme-light .promo-product {
@@ -2219,11 +2219,10 @@ body.menu-open .menu-toggle span:nth-child(3) {
 }
 
 .promo-hero {
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	place-items: center;
 	gap: 16px;
-	align-items: stretch;
-	min-height: 400px;
+	min-height: 300px;
 	border: none; 
 	background-color: transparent; 
 }
@@ -2240,25 +2239,27 @@ body.menu-open .menu-toggle span:nth-child(3) {
 }
 
 .promo-product {
-	position: relative;
+	width: 100%;
 	padding: 1rem;
-	min-height: 0;
 	background-color: transparent;
 	border: none;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	justify-content: center; 
+	align-items: center; 
+	place-items: center;
 	flex: 1 1 0;
 	overflow: hidden;
 }
 
 .promo-image-full {
+	position: relative;
 	width: 100%;
-	min-height: 740px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 0.75rem;
+	height: 100%;
+	min-height: 540px;
+	text-align: center; 
+	display: grid; 
+	place-items: center;
+	padding: 1rem 1.5rem;
 	border-radius: 20px;
 	background-color: transparent;
 }
@@ -2295,13 +2296,15 @@ body.menu-open .menu-toggle span:nth-child(3) {
 
 
 .promo-img {
+	position: absolute;
+	top: -8%; 
 	width: min(100%, 760px);
 	height: auto;
 	max-height: 460px;
 	object-fit: contain;
 	object-position: center;
 	display: block;
-	margin: 0 auto;
+	margin: auto;
 	cursor: zoom-in;
 	transition:
 		transform 0.2s ease,

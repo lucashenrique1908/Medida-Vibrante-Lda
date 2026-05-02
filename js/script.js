@@ -486,7 +486,7 @@ const reviewsList = document.getElementById("reviews-list");
 const reviewsStatus = document.getElementById("reviews-status");
 // Limita o home a cinco álbuns e define o texto padrão usado no modal da galeria.
 const GALLERY_PREVIEW_LIMIT = 5;
-const GALLERY_HOME_TITLE = "Galeria de Trabalhos";
+const GALLERY_HOME_TITLE = "Confira nossos Trabalhos e Garanta já!!!";
 const GALLERY_HOME_SUBTITLE = "Escolha um álbum para ver o trabalho completo.";
 // Filtra o ficheiro de dados para garantir que só entram álbuns com fotos válidas.
 const PROJECT_ALBUM_LIST = PROJECT_ALBUMS.filter(
