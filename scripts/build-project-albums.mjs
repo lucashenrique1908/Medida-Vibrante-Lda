@@ -9,9 +9,10 @@ const imageExtensions = new Set([".jpg", ".jpeg", ".png", ".webp", ".avif"]);
 const albumOrder = [
 	"Projeto em Roma-Areeiro",
 	"Projeto em Alvalade - Lisboa",
-	"Projeto em Alcabideche",
+	"Projeto em Barreiro",
 	"Projeto em cascais",
 	"Projeto em Ajuda - Lisboa",
+	"Projeto em Alcabideche",
 	"Projeto em Fernão Ferro",
 ];
 const coverPhotoByDirectory = new Map([["Projeto em cascais", "img5.jpeg"]]);
