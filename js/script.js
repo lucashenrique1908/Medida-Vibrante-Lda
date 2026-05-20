@@ -1301,11 +1301,11 @@ function setupFirebaseReviews() {
 		snapshot.forEach((docSnap) => {
 			const data = docSnap.data();
 			reviewsList.appendChild(
-				createReviewItem({
-					nome: data.nome || "Cliente",
-					comentario: data.comentario || "",
-					estrelas: Number(data.estrelas) || 1,
-				}),
+				   createReviewItem({
+					   nome: data.nome || "Cliente",
+					   comentario: data.mensagem || "",
+					   estrelas: Number(data.rating) || 1,
+				   }),
 			);
 		});
 	});
@@ -1321,21 +1321,23 @@ function setupReviewForm() {
 			return;
 		}
 
+
 		const data = new FormData(reviewForm);
-		const estrelas = Number(data.get("review_stars"));
-		if (!estrelas || estrelas < 1 || estrelas > 5) {
+		// Garantir que o valor das estrelas é lido corretamente do campo hidden
+		let estrelas = parseInt(reviewStarsField.value, 10);
+		if (isNaN(estrelas) || estrelas < 1 || estrelas > 5) {
 			reviewsStatus.textContent = "Escolha uma avaliação entre 1 e 5 estrelas.";
 			return;
 		}
 
 		const payload = {
 			nome: String(data.get("review_nome") || "").trim(),
-			comentario: String(data.get("review_comentario") || "").trim(),
-			estrelas,
+			mensagem: String(data.get("review_comentario") || "").trim(),
+			rating: estrelas,
 			createdAt: serverTimestamp(),
 		};
 
-		if (!payload.nome || !payload.comentario) {
+		if (!payload.nome || !payload.mensagem) {
 			reviewsStatus.textContent = "Preencha nome e comentário.";
 			return;
 		}
