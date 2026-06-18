@@ -11,7 +11,7 @@ const albumOrder = [
 	"Projeto em Roma-Areeiro",
 	"Projeto em cascais",
 	"Projeto em Barreiro",
-	"Projeto em soalheiro",
+	"Projeto em sobralinho",
 	"Projeto em Ajuda - Lisboa",
 	"Projeto em Alcabideche",
 	"Projeto em Fernão Ferro",

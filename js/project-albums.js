@@ -184,76 +184,76 @@ export const PROJECT_ALBUMS = [
 		]
 	},
 	{
-		"id": "projeto-em-soalheiro",
-		"title": "Projeto em soalheiro",
+		"id": "projeto-em-sobralinho",
+		"title": "Projeto em sobralinho",
 		"photos": [
 			{
-				"src": "img/projetos/Projeto em soalheiro/img1.jpg",
-				"alt": "Projeto em soalheiro - foto 1"
+				"src": "img/projetos/Projeto em sobralinho/img1.jpg",
+				"alt": "Projeto em sobralinho - foto 1"
 			},
 			{
-				"src": "img/projetos/Projeto em soalheiro/img2.jpg",
-				"alt": "Projeto em soalheiro - foto 2"
+				"src": "img/projetos/Projeto em sobralinho/img2.jpg",
+				"alt": "Projeto em sobralinho - foto 2"
 			},
 			{
-				"src": "img/projetos/Projeto em soalheiro/img3.jpg",
-				"alt": "Projeto em soalheiro - foto 3"
+				"src": "img/projetos/Projeto em sobralinho/img3.jpg",
+				"alt": "Projeto em sobralinho - foto 3"
 			},
 			{
-				"src": "img/projetos/Projeto em soalheiro/img4.jpg",
-				"alt": "Projeto em soalheiro - foto 4"
+				"src": "img/projetos/Projeto em sobralinho/img4.jpg",
+				"alt": "Projeto em sobralinho - foto 4"
 			},
 			{
-				"src": "img/projetos/Projeto em soalheiro/img5.jpg",
-				"alt": "Projeto em soalheiro - foto 5"
+				"src": "img/projetos/Projeto em sobralinho/img5.jpg",
+				"alt": "Projeto em sobralinho - foto 5"
 			},
 			{
-				"src": "img/projetos/Projeto em soalheiro/img6.jpg",
-				"alt": "Projeto em soalheiro - foto 6"
+				"src": "img/projetos/Projeto em sobralinho/img6.jpg",
+				"alt": "Projeto em sobralinho - foto 6"
 			},
 			{
-				"src": "img/projetos/Projeto em soalheiro/img7.jpg",
-				"alt": "Projeto em soalheiro - foto 7"
+				"src": "img/projetos/Projeto em sobralinho/img7.jpg",
+				"alt": "Projeto em sobralinho - foto 7"
 			},
 			{
-				"src": "img/projetos/Projeto em soalheiro/img8.jpg",
-				"alt": "Projeto em soalheiro - foto 8"
+				"src": "img/projetos/Projeto em sobralinho/img8.jpg",
+				"alt": "Projeto em sobralinho - foto 8"
 			},
 			{
-				"src": "img/projetos/Projeto em soalheiro/img9.jpg",
-				"alt": "Projeto em soalheiro - foto 9"
+				"src": "img/projetos/Projeto em sobralinho/img9.jpg",
+				"alt": "Projeto em sobralinho - foto 9"
 			},
 			{
-				"src": "img/projetos/Projeto em soalheiro/img10.jpg",
-				"alt": "Projeto em soalheiro - foto 10"
+				"src": "img/projetos/Projeto em sobralinho/img10.jpg",
+				"alt": "Projeto em sobralinho - foto 10"
 			},
 			{
-				"src": "img/projetos/Projeto em soalheiro/img11.jpg",
-				"alt": "Projeto em soalheiro - foto 11"
+				"src": "img/projetos/Projeto em sobralinho/img11.jpg",
+				"alt": "Projeto em sobralinho - foto 11"
 			},
 			{
-				"src": "img/projetos/Projeto em soalheiro/img12.jpg",
-				"alt": "Projeto em soalheiro - foto 12"
+				"src": "img/projetos/Projeto em sobralinho/img12.jpg",
+				"alt": "Projeto em sobralinho - foto 12"
 			},
 			{
-				"src": "img/projetos/Projeto em soalheiro/img13.jpg",
-				"alt": "Projeto em soalheiro - foto 13"
+				"src": "img/projetos/Projeto em sobralinho/img13.jpg",
+				"alt": "Projeto em sobralinho - foto 13"
 			},
 			{
-				"src": "img/projetos/Projeto em soalheiro/img14.jpg",
-				"alt": "Projeto em soalheiro - foto 14"
+				"src": "img/projetos/Projeto em sobralinho/img14.jpg",
+				"alt": "Projeto em sobralinho - foto 14"
 			},
 			{
-				"src": "img/projetos/Projeto em soalheiro/img15.jpg",
-				"alt": "Projeto em soalheiro - foto 15"
+				"src": "img/projetos/Projeto em sobralinho/img15.jpg",
+				"alt": "Projeto em sobralinho - foto 15"
 			},
 			{
-				"src": "img/projetos/Projeto em soalheiro/img16.jpg",
-				"alt": "Projeto em soalheiro - foto 16"
+				"src": "img/projetos/Projeto em sobralinho/img16.jpg",
+				"alt": "Projeto em sobralinho - foto 16"
 			},
 			{
-				"src": "img/projetos/Projeto em soalheiro/img17.jpg",
-				"alt": "Projeto em soalheiro - foto 17"
+				"src": "img/projetos/Projeto em sobralinho/img17.jpg",
+				"alt": "Projeto em sobralinho - foto 17"
 			}
 		]
 	},
