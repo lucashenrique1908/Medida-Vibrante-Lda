@@ -7,16 +7,19 @@ const outputFile = path.join(projectRoot, "js", "project-albums.js");
 const ignoredDirectories = new Set(["imgGerais"]);
 const imageExtensions = new Set([".jpg", ".jpeg", ".png", ".webp", ".avif"]);
 const albumOrder = [
-	"Projeto em Roma-Areeiro",
 	"Projeto em Alvalade - Lisboa",
-	"Projeto em Barreiro",
+	"Projeto em Roma-Areeiro",
 	"Projeto em cascais",
+	"Projeto em Barreiro",
+	"Projeto em soalheiro",
 	"Projeto em Ajuda - Lisboa",
 	"Projeto em Alcabideche",
 	"Projeto em Fernão Ferro",
 ];
 const coverPhotoByDirectory = new Map([["Projeto em cascais", "img5.jpeg"]]);
-const titleByDirectory = new Map([["Projeto em cascais", "Projeto em Cascais"]]);
+const titleByDirectory = new Map([
+	["Projeto em cascais", "Projeto em Cascais"],
+]);
 
 function toSlug(value) {
 	return value
@@ -47,7 +50,9 @@ function sortAlbums(a, b) {
 async function buildAlbums() {
 	const entries = await fs.readdir(albumsRoot, { withFileTypes: true });
 	const albumDirectories = entries
-		.filter((entry) => entry.isDirectory() && !ignoredDirectories.has(entry.name))
+		.filter(
+			(entry) => entry.isDirectory() && !ignoredDirectories.has(entry.name),
+		)
 		.map((entry) => entry.name)
 		.sort(sortAlbums);
 

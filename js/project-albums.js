@@ -4,36 +4,6 @@
 
 export const PROJECT_ALBUMS = [
 	{
-		"id": "projeto-em-roma-areeiro",
-		"title": "Projeto em Roma-Areeiro",
-		"photos": [
-			{
-				"src": "img/projetos/Projeto em Roma-Areeiro/img1.jpeg",
-				"alt": "Projeto em Roma-Areeiro - foto 1"
-			},
-			{
-				"src": "img/projetos/Projeto em Roma-Areeiro/img2.jpeg",
-				"alt": "Projeto em Roma-Areeiro - foto 2"
-			},
-			{
-				"src": "img/projetos/Projeto em Roma-Areeiro/img3.jpeg",
-				"alt": "Projeto em Roma-Areeiro - foto 3"
-			},
-			{
-				"src": "img/projetos/Projeto em Roma-Areeiro/img4.jpeg",
-				"alt": "Projeto em Roma-Areeiro - foto 4"
-			},
-			{
-				"src": "img/projetos/Projeto em Roma-Areeiro/img5.jpeg",
-				"alt": "Projeto em Roma-Areeiro - foto 5"
-			},
-			{
-				"src": "img/projetos/Projeto em Roma-Areeiro/img6.jpeg",
-				"alt": "Projeto em Roma-Areeiro - foto 6"
-			}
-		]
-	},
-	{
 		"id": "projeto-em-alvalade-lisboa",
 		"title": "Projeto em Alvalade - Lisboa",
 		"photos": [
@@ -72,6 +42,86 @@ export const PROJECT_ALBUMS = [
 			{
 				"src": "img/projetos/Projeto em Alvalade - Lisboa/img9.jpeg",
 				"alt": "Projeto em Alvalade - Lisboa - foto 9"
+			}
+		]
+	},
+	{
+		"id": "projeto-em-roma-areeiro",
+		"title": "Projeto em Roma-Areeiro",
+		"photos": [
+			{
+				"src": "img/projetos/Projeto em Roma-Areeiro/img1.jpeg",
+				"alt": "Projeto em Roma-Areeiro - foto 1"
+			},
+			{
+				"src": "img/projetos/Projeto em Roma-Areeiro/img2.jpeg",
+				"alt": "Projeto em Roma-Areeiro - foto 2"
+			},
+			{
+				"src": "img/projetos/Projeto em Roma-Areeiro/img3.jpeg",
+				"alt": "Projeto em Roma-Areeiro - foto 3"
+			},
+			{
+				"src": "img/projetos/Projeto em Roma-Areeiro/img4.jpeg",
+				"alt": "Projeto em Roma-Areeiro - foto 4"
+			},
+			{
+				"src": "img/projetos/Projeto em Roma-Areeiro/img5.jpeg",
+				"alt": "Projeto em Roma-Areeiro - foto 5"
+			},
+			{
+				"src": "img/projetos/Projeto em Roma-Areeiro/img6.jpeg",
+				"alt": "Projeto em Roma-Areeiro - foto 6"
+			}
+		]
+	},
+	{
+		"id": "projeto-em-cascais",
+		"title": "Projeto em Cascais",
+		"photos": [
+			{
+				"src": "img/projetos/Projeto em cascais/img5.jpeg",
+				"alt": "Projeto em Cascais - foto 1"
+			},
+			{
+				"src": "img/projetos/Projeto em cascais/img1.jpeg",
+				"alt": "Projeto em Cascais - foto 2"
+			},
+			{
+				"src": "img/projetos/Projeto em cascais/img2.jpeg",
+				"alt": "Projeto em Cascais - foto 3"
+			},
+			{
+				"src": "img/projetos/Projeto em cascais/img3.jpeg",
+				"alt": "Projeto em Cascais - foto 4"
+			},
+			{
+				"src": "img/projetos/Projeto em cascais/img4.jpeg",
+				"alt": "Projeto em Cascais - foto 5"
+			},
+			{
+				"src": "img/projetos/Projeto em cascais/img6.jpeg",
+				"alt": "Projeto em Cascais - foto 6"
+			},
+			{
+				"src": "img/projetos/Projeto em cascais/img7.jpeg",
+				"alt": "Projeto em Cascais - foto 7"
+			},
+			{
+				"src": "img/projetos/Projeto em cascais/img8.jpeg",
+				"alt": "Projeto em Cascais - foto 8"
+			},
+			{
+				"src": "img/projetos/Projeto em cascais/img9.jpeg",
+				"alt": "Projeto em Cascais - foto 9"
+			},
+			{
+				"src": "img/projetos/Projeto em cascais/img10.jpeg",
+				"alt": "Projeto em Cascais - foto 10"
+			},
+			{
+				"src": "img/projetos/Projeto em cascais/img11.jpeg",
+				"alt": "Projeto em Cascais - foto 11"
 			}
 		]
 	},
@@ -134,52 +184,76 @@ export const PROJECT_ALBUMS = [
 		]
 	},
 	{
-		"id": "projeto-em-cascais",
-		"title": "Projeto em Cascais",
+		"id": "projeto-em-soalheiro",
+		"title": "Projeto em soalheiro",
 		"photos": [
 			{
-				"src": "img/projetos/Projeto em cascais/img5.jpeg",
-				"alt": "Projeto em Cascais - foto 1"
+				"src": "img/projetos/Projeto em soalheiro/img1.jpg",
+				"alt": "Projeto em soalheiro - foto 1"
 			},
 			{
-				"src": "img/projetos/Projeto em cascais/img1.jpeg",
-				"alt": "Projeto em Cascais - foto 2"
+				"src": "img/projetos/Projeto em soalheiro/img2.jpg",
+				"alt": "Projeto em soalheiro - foto 2"
 			},
 			{
-				"src": "img/projetos/Projeto em cascais/img2.jpeg",
-				"alt": "Projeto em Cascais - foto 3"
+				"src": "img/projetos/Projeto em soalheiro/img3.jpg",
+				"alt": "Projeto em soalheiro - foto 3"
 			},
 			{
-				"src": "img/projetos/Projeto em cascais/img3.jpeg",
-				"alt": "Projeto em Cascais - foto 4"
+				"src": "img/projetos/Projeto em soalheiro/img4.jpg",
+				"alt": "Projeto em soalheiro - foto 4"
 			},
 			{
-				"src": "img/projetos/Projeto em cascais/img4.jpeg",
-				"alt": "Projeto em Cascais - foto 5"
+				"src": "img/projetos/Projeto em soalheiro/img5.jpg",
+				"alt": "Projeto em soalheiro - foto 5"
 			},
 			{
-				"src": "img/projetos/Projeto em cascais/img6.jpeg",
-				"alt": "Projeto em Cascais - foto 6"
+				"src": "img/projetos/Projeto em soalheiro/img6.jpg",
+				"alt": "Projeto em soalheiro - foto 6"
 			},
 			{
-				"src": "img/projetos/Projeto em cascais/img7.jpeg",
-				"alt": "Projeto em Cascais - foto 7"
+				"src": "img/projetos/Projeto em soalheiro/img7.jpg",
+				"alt": "Projeto em soalheiro - foto 7"
 			},
 			{
-				"src": "img/projetos/Projeto em cascais/img8.jpeg",
-				"alt": "Projeto em Cascais - foto 8"
+				"src": "img/projetos/Projeto em soalheiro/img8.jpg",
+				"alt": "Projeto em soalheiro - foto 8"
 			},
 			{
-				"src": "img/projetos/Projeto em cascais/img9.jpeg",
-				"alt": "Projeto em Cascais - foto 9"
+				"src": "img/projetos/Projeto em soalheiro/img9.jpg",
+				"alt": "Projeto em soalheiro - foto 9"
 			},
 			{
-				"src": "img/projetos/Projeto em cascais/img10.jpeg",
-				"alt": "Projeto em Cascais - foto 10"
+				"src": "img/projetos/Projeto em soalheiro/img10.jpg",
+				"alt": "Projeto em soalheiro - foto 10"
 			},
 			{
-				"src": "img/projetos/Projeto em cascais/img11.jpeg",
-				"alt": "Projeto em Cascais - foto 11"
+				"src": "img/projetos/Projeto em soalheiro/img11.jpg",
+				"alt": "Projeto em soalheiro - foto 11"
+			},
+			{
+				"src": "img/projetos/Projeto em soalheiro/img12.jpg",
+				"alt": "Projeto em soalheiro - foto 12"
+			},
+			{
+				"src": "img/projetos/Projeto em soalheiro/img13.jpg",
+				"alt": "Projeto em soalheiro - foto 13"
+			},
+			{
+				"src": "img/projetos/Projeto em soalheiro/img14.jpg",
+				"alt": "Projeto em soalheiro - foto 14"
+			},
+			{
+				"src": "img/projetos/Projeto em soalheiro/img15.jpg",
+				"alt": "Projeto em soalheiro - foto 15"
+			},
+			{
+				"src": "img/projetos/Projeto em soalheiro/img16.jpg",
+				"alt": "Projeto em soalheiro - foto 16"
+			},
+			{
+				"src": "img/projetos/Projeto em soalheiro/img17.jpg",
+				"alt": "Projeto em soalheiro - foto 17"
 			}
 		]
 	},
