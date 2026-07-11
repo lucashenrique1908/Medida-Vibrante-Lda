@@ -319,103 +319,6 @@
 	}
 }
 
-.theme-light .theme-toggle svg {
-	width: 27px !important;
-	height: 27px !important;
-	transition:
-		width 0.18s,
-		height 0.18s;
-}
-.theme-light .lightbox,
-.theme-light .lightbox * {
-	color: #fff !important;
-}
-.theme-light .project-grid .album-meta,
-.theme-light .project-grid .album-meta *,
-.theme-light .project-grid .info {
-	color: #111 !important;
-}
-.theme-light .project-grid .album-meta,
-.theme-light .project-grid .album-meta *,
-.theme-light .project-grid .info {
-	color: #111 !important;
-}
-.theme-light .lightbox .album-meta,
-.theme-light .lightbox .album-meta *,
-.theme-light .lightbox .album-meta p,
-.theme-light .lightbox .info {
-	color: #fff !important;
-}
-.theme-light .project-card .album-meta,
-.theme-light .project-card .album-meta *,
-.theme-light .project-card .info {
-	color: #111 !important;
-}
-.theme-light .lightbox,
-.theme-light .lightbox *,
-.theme-light .gallery-title,
-.theme-light .gallery-subtitle,
-.theme-light .gallery-back,
-.theme-light .gallery-empty,
-.theme-light .project-card,
-.theme-light .album-meta,
-.theme-light .album-meta *,
-.theme-light .info {
-	color: #fff !important;
-}
-.theme-light .lightbox .album-count {
-	color: #fff !important;
-}
-.theme-light .promo-product {
-	background: #0f1a2b !important;
-}
-.theme-light .promo-title,
-.theme-light .promo-subtitle,
-.theme-light .promo-details,
-.theme-light .promo-details * {
-	color: #111 !important;
-}
-
-.theme-light .promo-info-copy h2,
-.theme-light .promo-topic h3,
-.theme-light .promo-topic p {
-	color: #111 !important;
-}
-
-.theme-light .promo-images-grid {
-	background: #0f1a2b !important;
-	border-radius: 12px;
-	padding: 10px 0;
-}
-
-.theme-light .amadora-link {
-	color: #08385d !important;
-	text-decoration: underline;
-}
-
-.theme-light .details-card--info {
-	background: transparent !important;
-}
-.theme-light .details-card--info p,
-.theme-light .details-card--info strong {
-	color: #111 !important;
-}
-
-.theme-light .details-card h2,
-.theme-light .details-list li {
-	color: #111 !important;
-}
-.theme-toggle {
-	padding: 0.18rem 0.18rem;
-	border-radius: 50%;
-	transition: background 0.18s;
-}
-.theme-toggle:hover,
-.theme-toggle:focus {
-	background: rgba(255, 211, 79, 0.13);
-	outline: none;
-}
-
 :root {
 	--bg: #070b12;
 	--bg-soft: #0f1a2b;
@@ -438,30 +341,6 @@
 	--bg-secondary: #1a2332;
 	--promo-surface: #0f1a2b;
 	--promo-border: #24344d;
-}
-
-.theme-light {
-	--bg: #fff;
-	--bg-soft: #f6f8fa;
-	--card: #f9fafb;
-	--text: #111;
-	--muted: #08385d;
-	--line: #dbe6f2;
-	--accent: #2f6fff;
-	--accent-soft: #1451d6;
-	--header-bg: rgba(255, 255, 255, 0.97);
-	--header-scrolled: rgba(246, 248, 250, 0.97);
-	--header-border: rgba(8, 56, 93, 0.12);
-	--section-dark-bg: linear-gradient(
-		180deg,
-		rgba(8, 56, 93, 0.03),
-		rgba(0, 0, 0, 0.01)
-	);
-	--input-bg: #f6f8fa;
-	--nav-text: #08385d;
-	--bg-secondary: #f6f8fa;
-	--promo-surface: #f6f8fa;
-	--promo-border: #dbe6f2;
 }
 
 /* Reset simples para garantir consistência de box model. */
@@ -2766,6 +2645,270 @@ body.menu-open .menu-toggle span:nth-child(3) {
 
 	.promo-hero {
 		min-height: 0;
+	}
+}
+
+.promo-section {
+	background: linear-gradient(180deg, rgba(12,18,31,0.95) 0%, rgba(24,34,56,0.95) 100%);
+	padding: 3rem 0;
+}
+
+.promo-container {
+	background: rgba(18, 26, 40, 0.95);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 24px;
+	padding: 24px;
+}
+
+.promo-inner {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.promo-block {
+	flex: 1 1 320px;
+	min-width: 280px;
+}
+
+.promo-block--info {
+	max-width: 560px;
+}
+
+.promo-panel {
+	/* Blocos principais com relevo moderno e profundidade não branca */
+	background: rgba(255, 255, 255, 0.04);
+	border: 1px solid rgba(255, 255, 255, 0.09);
+	border-radius: 22px;
+	padding: 24px;
+	margin-bottom: 20px;
+	box-shadow: 0 18px 50px rgba(0, 0, 0, 0.18);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.promo-panel:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 28px 70px rgba(0, 0, 0, 0.22);
+}
+
+.promo-kicker {
+	font-size: 0.9rem;
+	font-weight: 700;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: #cce2ff;
+	margin-bottom: 12px;
+}
+
+.promo-title {
+	font-size: clamp(1.4rem, 2.1vw, 2rem);
+	margin-bottom: 16px;
+	color: #ffffff;
+	line-height: 1.05;
+}
+
+.promo-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.promo-list li {
+	position: relative;
+	padding-left: 26px;
+	margin-bottom: 12px;
+	color: #e9f0ff;
+}
+
+.promo-list li::before {
+	content: "•";
+	position: absolute;
+	left: 0;
+	top: 0.16rem;
+	color: #6ad9ff;
+}
+
+.benefits-list {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 12px;
+	margin-bottom: 18px;
+}
+
+.benefit-item {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 14px;
+	background: rgba(255, 255, 255, 0.06);
+	border-radius: 12px;
+	color: #eef5ff;
+}
+
+.benefit-icon {
+	display: inline-flex;
+	width: 32px;
+	height: 32px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	background: rgba(106, 217, 255, 0.16);
+	color: #bdecff;
+	font-size: 1rem;
+}
+
+.promo-copy {
+	color: #dfe7f4;
+	line-height: 1.75;
+	margin-bottom: 18px;
+}
+
+.promo-cta {
+	padding: 14px 22px;
+	border-radius: 999px;
+	font-weight: 700;
+	text-decoration: none;
+	background: #ffbb33;
+	color: #10203a;
+	display: inline-block;
+}
+
+.promo-block--offers {
+	max-width: 560px;
+}
+
+.offer-card {
+	/* Card de oferta com profundidade e relevo suave */
+	display: flex;
+	align-items: center;
+	gap: 22px;
+	padding: 28px;
+	background: rgba(255, 255, 255, 0.06);
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	border-radius: 28px;
+	margin-bottom: 18px;
+	box-shadow: 0 22px 64px rgba(0, 0, 0, 0.22);
+	backdrop-filter: blur(10px);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	transform-style: preserve-3d;
+	min-height: 300px;
+}
+
+.offer-card:hover {
+	transform: translateY(-4px) scale(1.02);
+	box-shadow: 0 30px 82px rgba(0, 0, 0, 0.26);
+}
+
+.offer-image {
+	/* A imagem e os detalhes partilham diretamente o mesmo cartão. */
+	flex: 0 0 280px;
+	width: 280px;
+	height: 280px;
+	display: block;
+	object-fit: contain;
+	object-position: center;
+	filter: drop-shadow(0 18px 24px rgba(0, 0, 0, 0.32));
+}
+
+.offer-card:hover .offer-image,
+.offer-image:hover {
+	transform: perspective(900px) rotateY(-6deg) rotateX(5deg) scale(1.1);
+	filter: drop-shadow(0 28px 38px rgba(0, 0, 0, 0.42));
+}
+
+.offer-meta {
+	flex: 1;
+	min-width: 0;
+	display: grid;
+	gap: 7px;
+	color: #f1f7ff;
+}
+
+.offer-brand {
+	font-size: 1.35rem;
+	font-weight: 700;
+	line-height: 1.15;
+	margin: 0;
+}
+
+.offer-spec {
+	font-size: 0.95rem;
+	color: #9bb6d2;
+	margin: 0;
+}
+
+.offer-price {
+	font-size: 1.1rem;
+	font-weight: 700;
+	color: #ffe38d;
+	margin: 0;
+}
+
+.promo-footer {
+	margin-top: 24px;
+	padding: 20px 22px;
+	background: rgba(255, 255, 255, 0.05);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 18px;
+}
+
+.promo-footer-slogan {
+	font-size: 1.3rem;
+	font-weight: 700;
+	color: #ffffff;
+	margin-bottom: 14px;
+}
+
+.promo-contact-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	color: #d9e4f7;
+}
+
+.promo-contact-list li {
+	margin-bottom: 10px;
+}
+
+.promo-contact-list strong {
+	color: #ffffff;
+}
+
+@media (max-width: 980px) {
+	.promo-inner {
+		flex-direction: column;
+	}
+
+	.promo-block--offers,
+	.promo-block--info {
+		max-width: 100%;
+	}
+
+	.benefits-list {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 620px) {
+	.promo-container {
+		padding: 18px;
+	}
+
+	.offer-card {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.offer-image {
+		max-width: 100%;
+		width: 100%;
+		height: auto;
+		aspect-ratio: 16 / 9;
+	}
+
+	.promo-cta {
+		width: 100%;
+		text-align: center;
 	}
 }
 

@@ -432,53 +432,12 @@ const phoneCountrySearch = document.getElementById("phone-country-search");
 const phoneCountryList = document.getElementById("phone-country-list");
 // Referências do cabeçalho. O JS altera classes, atributos ARIA e o logótipo.
 const siteHeader = document.querySelector(".site-header");
-const brandLogo = document.getElementById("brand-logo");
 const menuToggle = document.getElementById("menu-toggle");
 const primaryNav = document.getElementById("primary-nav");
 const navActions = document.querySelector(".nav-actions");
 
 // Referências da área de avaliações.
 
-// --- Alternância de Tema Claro/Escuro ---
-
-const themeToggleBtn = document.getElementById("theme-toggle");
-const body = document.body;
-const sunSVG = `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="5" fill="#ffd34f"/><g stroke="#ffd34f" stroke-width="1.5"><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></g></svg>`;
-const moonSVG = `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 15.5A9 9 0 0 1 8.5 3a.5.5 0 0 0-.5.5A9 9 0 1 0 21 15.5Z" fill="#ffd34f"/></svg>`;
-
-function setTheme(theme) {
-	if (!themeToggleBtn) return;
-	if (theme === "light") {
-		body.classList.add("theme-light");
-		themeToggleBtn.innerHTML = moonSVG;
-		localStorage.setItem("theme", "light");
-	} else {
-		body.classList.remove("theme-light");
-		themeToggleBtn.innerHTML = sunSVG;
-		localStorage.setItem("theme", "dark");
-	}
-}
-
-if (themeToggleBtn) {
-	// Detecta preferência do usuário ou sistema
-	const userTheme = localStorage.getItem("theme");
-	const systemPrefersLight = window.matchMedia(
-		"(prefers-color-scheme: light)",
-	).matches;
-	if (userTheme === "light" || (!userTheme && systemPrefersLight)) {
-		setTheme("light");
-	} else {
-		setTheme("dark");
-	}
-
-	themeToggleBtn.addEventListener("click", () => {
-		if (body.classList.contains("theme-light")) {
-			setTheme("dark");
-		} else {
-			setTheme("light");
-		}
-	});
-}
 const reviewForm = document.getElementById("review-form");
 const reviewRatingRoot = document.getElementById("review-rating");
 const reviewStarsField = document.getElementById("review_stars");
@@ -498,9 +457,6 @@ let currentAlbumId = null;
 let currentPhotoIndex = -1;
 
 let db = null;
-// O JS troca estas imagens em applyTheme() quando o utilizador alterna o tema.
-const LOGO_LIGHT = "img/projetos/imgGerais/slogan.png";
-const LOGO_DARK = "img/projetos/imgGerais/sloganVersao2.png";
 let selectedPhoneCountry =
 	PHONE_COUNTRIES.find((country) => country.code === "PT") ||
 	PHONE_COUNTRIES[0];
@@ -1094,18 +1050,6 @@ function setupHeaderScroll() {
 	window.addEventListener("scroll", updateHeaderState, { passive: true });
 }
 
-// Aplica o tema global do site.
-// Aqui o JS:
-// 1) liga body.theme-dark, que altera cores via CSS;
-// 2) troca o logótipo para o escuro.
-function applyTheme() {
-	document.body.classList.add("theme-dark");
-
-	if (brandLogo) {
-		brandLogo.src = LOGO_DARK;
-	}
-}
-
 // Fecha o menu mobile e repõe os atributos do botão hamburguer.
 function closeMobileMenu() {
 	if (!menuToggle || !primaryNav) {
@@ -1473,7 +1417,6 @@ function init() {
 	setupReviewRating();
 	setupFirebaseReviews();
 	setupReviewForm();
-	applyTheme();
 	setupHeaderScroll();
 	setupMobileMenu();
 	bindEvents();
