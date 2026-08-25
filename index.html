@@ -64,6 +64,7 @@
 			<section id="promocoes" class="section promo-section">
 				<div class="container promo-container">
 					<div class="promo-inner">
+						<!--
 						<div class="promo-block promo-block--info" aria-label="Resumo da promoção e benefícios">
 							<div class="promo-panel promo-panel--installation">
 								<p class="promo-kicker">PREÇOS COM INSTALAÇÃO INCLUÍDA</p>
@@ -93,8 +94,10 @@
 								<a href="#formulario" class="btn btn-primary promo-cta">PEÇA JÁ SEU ORÇAMENTO PARA OUTROS SISTEMAS!</a>
 							</div>
 						</div>
+						-->
 
 						<div class="promo-block promo-block--offers" aria-label="Ofertas de ar condicionado">
+							<!--
 							<div class="offer-card">
 								<img src="img/imgPromo/AcDaikin.png" alt="Daikin Perfera 9.000 BTUs" class="offer-image" />
 								<div class="offer-meta">
@@ -103,7 +106,9 @@
 									<p class="offer-price">1.452,93€ c/ IVA</p>
 								</div>
 							</div>
+							-->
 
+							<!--
 							<div class="offer-card">
 								<img src="img/imgPromo/AcMitsubish.png" alt="Mitsubishi Electric HR 9.000 BTUs" class="offer-image" />
 								<div class="offer-meta">
@@ -112,6 +117,7 @@
 									<p class="offer-price">987,07€ c/ IVA</p>
 								</div>
 							</div>
+							-->
 
 							<!-- <div class="offer-card">
 								<img src="img/imgPromo/AcTcl.png" alt="TCL BreenZel 9.000 BTUs" class="offer-image" />
@@ -301,6 +307,34 @@
 								<small id="phone-feedback" class="field-feedback" aria-live="polite"></small>
 							</label>
 
+							<label class="field-group"
+								>Código postal
+								<input
+									type="text"
+									name="codigo_postal"
+									inputmode="numeric"
+									autocomplete="postal-code"
+									placeholder="0000-000"
+									maxlength="8"
+									required
+								/>
+							</label>
+
+							<label class="field-group"
+								>Rua
+								<input type="text" name="rua" autocomplete="street-address" required />
+							</label>
+
+							<label class="field-group"
+								>Número
+								<input type="text" name="numero" autocomplete="address-line2" required />
+							</label>
+
+							<label class="field-group"
+								>Cidade
+								<input type="text" name="cidade" autocomplete="address-level2" required />
+							</label>
+
 							<label
 								>Serviço pretendido
 								<!-- As opções deste select são inseridas em populateServiceSelect(), no JS. -->
@@ -443,6 +477,15 @@
 						></div>
 						<!-- Lista de comentários renderizada dinamicamente a partir do Firestore. -->
 						<div id="reviews-list" class="reviews-list"></div>
+						<button
+							id="reviews-toggle"
+							class="reviews-toggle"
+							type="button"
+							hidden
+							aria-expanded="false"
+						>
+							Ver mais comentários
+						</button>
 					</div>
 				</section>
 

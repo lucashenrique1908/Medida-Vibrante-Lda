@@ -1247,6 +1247,26 @@ p {
 	gap: 0.8rem;
 }
 
+.reviews-toggle {
+	display: block;
+	margin: 0.9rem auto 0;
+	padding: 0.45rem 0.8rem;
+	border: 1px solid var(--line);
+	border-radius: 999px;
+	background: var(--card);
+	color: var(--accent);
+	font: inherit;
+	font-size: 0.88rem;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.reviews-toggle:hover,
+.reviews-toggle:focus-visible {
+	border-color: var(--accent);
+	background: var(--input-bg);
+}
+
 .reviews-status {
 	min-height: 1.3rem;
 	color: var(--muted);
@@ -1263,6 +1283,13 @@ p {
 
 .review-item .stars {
 	color: #ffd34f;
+}
+
+.review-date {
+	display: block;
+	margin-top: 0.7rem;
+	color: var(--muted);
+	font-size: 0.78rem;
 }
 
 .zones-grid {

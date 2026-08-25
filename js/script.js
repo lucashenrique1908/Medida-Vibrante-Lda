@@ -3,7 +3,6 @@ import {
 	addDoc,
 	collection,
 	getFirestore,
-	limit,
 	onSnapshot,
 	orderBy,
 	query,
@@ -443,6 +442,10 @@ const reviewRatingRoot = document.getElementById("review-rating");
 const reviewStarsField = document.getElementById("review_stars");
 const reviewsList = document.getElementById("reviews-list");
 const reviewsStatus = document.getElementById("reviews-status");
+const reviewsToggle = document.getElementById("reviews-toggle");
+const REVIEWS_PREVIEW_LIMIT = 5;
+let reviews = [];
+let areAllReviewsVisible = false;
 // Limita o home a cinco álbuns e define o texto padrão usado no modal da galeria.
 const GALLERY_PREVIEW_LIMIT = 5;
 const GALLERY_HOME_TITLE = "Confira nossos Trabalhos e Garanta já!!!";
@@ -1171,6 +1174,10 @@ function setupContactForm() {
 			`NIF: ${data.get("nif")}`,
 			`Email: ${data.get("email")}`,
 			`Telefone: ${data.get("telefone")}`,
+			`Código postal: ${data.get("codigo_postal")}`,
+			`Rua: ${data.get("rua")}`,
+			`Número: ${data.get("numero")}`,
+			`Cidade: ${data.get("cidade")}`,
 			`Serviço desejado: ${data.get("servico")}`,
 			`Marca de preferência: ${data.get("marca")}`,
 		].join("\n");
@@ -1210,6 +1217,25 @@ function setupReviewRating() {
 }
 
 // Cria cada item visual de comentário carregado do Firebase.
+function formatReviewDate(createdAt) {
+	if (!createdAt) return "Data em atualização";
+
+	const date = typeof createdAt.toDate === "function"
+		? createdAt.toDate()
+		: new Date(createdAt);
+
+	if (Number.isNaN(date.getTime())) return "Data indisponível";
+
+	const formattedDate = new Intl.DateTimeFormat("pt-PT", {
+		dateStyle: "short",
+	}).format(date);
+	const formattedTime = new Intl.DateTimeFormat("pt-PT", {
+		timeStyle: "short",
+	}).format(date);
+
+	return `${formattedDate} - ${formattedTime}`;
+}
+
 function createReviewItem(review) {
 	const item = document.createElement("article");
 	item.className = "review-item";
@@ -1217,8 +1243,38 @@ function createReviewItem(review) {
     <strong>${review.nome}</strong>
     <p class="stars">${"★".repeat(review.estrelas)}${"☆".repeat(5 - review.estrelas)}</p>
     <p>${review.comentario}</p>
+    <time class="review-date">${formatReviewDate(review.createdAt)}</time>
   `;
 	return item;
+}
+
+// Mostra as cinco avaliações mais recentes ou a lista completa, conforme a escolha do utilizador.
+function renderReviews() {
+	if (!reviewsList || !reviewsToggle) return;
+
+	const visibleReviews = areAllReviewsVisible
+		? reviews
+		: reviews.slice(0, REVIEWS_PREVIEW_LIMIT);
+
+	reviewsList.innerHTML = "";
+	visibleReviews.forEach((review) => reviewsList.appendChild(createReviewItem(review)));
+
+	const hasMoreReviews = reviews.length > REVIEWS_PREVIEW_LIMIT;
+	reviewsToggle.hidden = !hasMoreReviews;
+	reviewsToggle.textContent = areAllReviewsVisible
+		? "Ver menos"
+		: "Ver mais comentários";
+	reviewsToggle.setAttribute("aria-expanded", String(areAllReviewsVisible));
+}
+
+// Alterna entre a pré-visualização e todas as avaliações já carregadas.
+function setupReviewsToggle() {
+	if (!reviewsToggle) return;
+
+	reviewsToggle.addEventListener("click", () => {
+		areAllReviewsVisible = !areAllReviewsVisible;
+		renderReviews();
+	});
 }
 
 // Liga a secção de avaliações ao Firestore e redesenha a lista em tempo real.
@@ -1236,22 +1292,19 @@ function setupFirebaseReviews() {
 	const reviewsQuery = query(
 		collection(db, "avaliacoes"),
 		orderBy("createdAt", "desc"),
-		limit(50),
 	);
 
 	onSnapshot(reviewsQuery, (snapshot) => {
-		reviewsList.innerHTML = "";
-		// A lista é recriada do zero sempre que chegam alterações da base de dados.
-		snapshot.forEach((docSnap) => {
+		reviews = snapshot.docs.map((docSnap) => {
 			const data = docSnap.data();
-			reviewsList.appendChild(
-				   createReviewItem({
-					   nome: data.nome || "Cliente",
-					   comentario: data.mensagem || "",
-					   estrelas: Number(data.rating) || 1,
-				   }),
-			);
+			return {
+				nome: data.nome || "Cliente",
+				comentario: data.mensagem || "",
+				estrelas: Number(data.rating) || 1,
+				createdAt: data.createdAt,
+			};
 		});
+		renderReviews();
 	});
 }
 
@@ -1415,6 +1468,7 @@ function init() {
 	setupContactValidation();
 	setupContactForm();
 	setupReviewRating();
+	setupReviewsToggle();
 	setupFirebaseReviews();
 	setupReviewForm();
 	setupHeaderScroll();
