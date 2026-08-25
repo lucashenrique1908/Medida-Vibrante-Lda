@@ -2939,6 +2939,31 @@ body.menu-open .menu-toggle span:nth-child(3) {
 	}
 }
 
+/* Hero compacto no mobile: evita espaço excessivo após o cabeçalho. */
+@media (max-width: 680px) {
+	.hero {
+		padding: 1.5rem 0 2.25rem;
+	}
+
+	.hero-grid {
+		gap: 1.5rem;
+	}
+
+	.hero-visual {
+		min-height: clamp(220px, 58vw, 320px);
+	}
+}
+
+@media (max-width: 380px) {
+	.hero {
+		padding-top: 1.2rem;
+	}
+
+	.hero-visual {
+		min-height: 200px;
+	}
+}
+
 @media print {
 	@page {
 		size: A4 portrait;
