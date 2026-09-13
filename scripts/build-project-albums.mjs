@@ -7,10 +7,14 @@ const outputFile = path.join(projectRoot, "js", "project-albums.js");
 const ignoredDirectories = new Set(["imgGerais"]);
 const imageExtensions = new Set([".jpg", ".jpeg", ".png", ".webp", ".avif"]);
 const albumOrder = [
+	"Escritorio em Codivel - Odivelas",
+	"Projeto em Almada",
+	"Projeto em Paço dos Arcos -  Lisboa",
+	"São joão daas lampras",
+	"Projeto em Barreiro",
 	"Projeto em Alvalade - Lisboa",
 	"Projeto em Roma-Areeiro",
 	"Projeto em cascais",
-	"Projeto em Barreiro",
 	"Projeto em sobralinho",
 	"Projeto em Ajuda - Lisboa",
 	"Projeto em Alcabideche",
@@ -18,7 +22,10 @@ const albumOrder = [
 ];
 const coverPhotoByDirectory = new Map([["Projeto em cascais", "img5.jpeg"]]);
 const titleByDirectory = new Map([
+	["Escritorio em Codivel - Odivelas", "Escritório em Codivel - Odivelas"],
 	["Projeto em cascais", "Projeto em Cascais"],
+	["Projeto em Paço dos Arcos -  Lisboa", "Projeto em Paço dos Arcos - Lisboa"],
+	["São joão daas lampras", "São João das Lampras"],
 ]);
 
 function toSlug(value) {

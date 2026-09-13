@@ -4,6 +4,324 @@
 
 export const PROJECT_ALBUMS = [
 	{
+		"id": "escritorio-em-codivel-odivelas",
+		"title": "Escritório em Codivel - Odivelas",
+		"photos": [
+			{
+				"src": "img/projetos/Escritorio em Codivel - Odivelas/iimg3.JPG",
+				"alt": "Escritório em Codivel - Odivelas - foto 1"
+			},
+			{
+				"src": "img/projetos/Escritorio em Codivel - Odivelas/img1.JPG",
+				"alt": "Escritório em Codivel - Odivelas - foto 2"
+			},
+			{
+				"src": "img/projetos/Escritorio em Codivel - Odivelas/img2.JPG",
+				"alt": "Escritório em Codivel - Odivelas - foto 3"
+			},
+			{
+				"src": "img/projetos/Escritorio em Codivel - Odivelas/img4.JPG",
+				"alt": "Escritório em Codivel - Odivelas - foto 4"
+			},
+			{
+				"src": "img/projetos/Escritorio em Codivel - Odivelas/img5.JPG",
+				"alt": "Escritório em Codivel - Odivelas - foto 5"
+			}
+		]
+	},
+	{
+		"id": "projeto-em-almada",
+		"title": "Projeto em Almada",
+		"photos": [
+			{
+				"src": "img/projetos/Projeto em Almada/img1.JPG",
+				"alt": "Projeto em Almada - foto 1"
+			},
+			{
+				"src": "img/projetos/Projeto em Almada/img2.JPG",
+				"alt": "Projeto em Almada - foto 2"
+			},
+			{
+				"src": "img/projetos/Projeto em Almada/img3.JPG",
+				"alt": "Projeto em Almada - foto 3"
+			},
+			{
+				"src": "img/projetos/Projeto em Almada/img4.JPG",
+				"alt": "Projeto em Almada - foto 4"
+			},
+			{
+				"src": "img/projetos/Projeto em Almada/img5.JPG",
+				"alt": "Projeto em Almada - foto 5"
+			},
+			{
+				"src": "img/projetos/Projeto em Almada/img6.JPG",
+				"alt": "Projeto em Almada - foto 6"
+			},
+			{
+				"src": "img/projetos/Projeto em Almada/img7.JPG",
+				"alt": "Projeto em Almada - foto 7"
+			},
+			{
+				"src": "img/projetos/Projeto em Almada/img8.JPG",
+				"alt": "Projeto em Almada - foto 8"
+			}
+		]
+	},
+	{
+		"id": "projeto-em-paco-dos-arcos-lisboa",
+		"title": "Projeto em Paço dos Arcos - Lisboa",
+		"photos": [
+			{
+				"src": "img/projetos/Projeto em Paço dos Arcos -  Lisboa/img1.JPG",
+				"alt": "Projeto em Paço dos Arcos - Lisboa - foto 1"
+			},
+			{
+				"src": "img/projetos/Projeto em Paço dos Arcos -  Lisboa/img2.JPG",
+				"alt": "Projeto em Paço dos Arcos - Lisboa - foto 2"
+			},
+			{
+				"src": "img/projetos/Projeto em Paço dos Arcos -  Lisboa/img3.JPG",
+				"alt": "Projeto em Paço dos Arcos - Lisboa - foto 3"
+			},
+			{
+				"src": "img/projetos/Projeto em Paço dos Arcos -  Lisboa/img4.JPG",
+				"alt": "Projeto em Paço dos Arcos - Lisboa - foto 4"
+			},
+			{
+				"src": "img/projetos/Projeto em Paço dos Arcos -  Lisboa/img5.JPG",
+				"alt": "Projeto em Paço dos Arcos - Lisboa - foto 5"
+			},
+			{
+				"src": "img/projetos/Projeto em Paço dos Arcos -  Lisboa/img6.JPG",
+				"alt": "Projeto em Paço dos Arcos - Lisboa - foto 6"
+			},
+			{
+				"src": "img/projetos/Projeto em Paço dos Arcos -  Lisboa/img7.JPG",
+				"alt": "Projeto em Paço dos Arcos - Lisboa - foto 7"
+			},
+			{
+				"src": "img/projetos/Projeto em Paço dos Arcos -  Lisboa/img8.JPG",
+				"alt": "Projeto em Paço dos Arcos - Lisboa - foto 8"
+			},
+			{
+				"src": "img/projetos/Projeto em Paço dos Arcos -  Lisboa/img9.JPG",
+				"alt": "Projeto em Paço dos Arcos - Lisboa - foto 9"
+			},
+			{
+				"src": "img/projetos/Projeto em Paço dos Arcos -  Lisboa/img10.JPG",
+				"alt": "Projeto em Paço dos Arcos - Lisboa - foto 10"
+			},
+			{
+				"src": "img/projetos/Projeto em Paço dos Arcos -  Lisboa/img11.JPG",
+				"alt": "Projeto em Paço dos Arcos - Lisboa - foto 11"
+			},
+			{
+				"src": "img/projetos/Projeto em Paço dos Arcos -  Lisboa/img12.JPG",
+				"alt": "Projeto em Paço dos Arcos - Lisboa - foto 12"
+			},
+			{
+				"src": "img/projetos/Projeto em Paço dos Arcos -  Lisboa/img13.JPG",
+				"alt": "Projeto em Paço dos Arcos - Lisboa - foto 13"
+			},
+			{
+				"src": "img/projetos/Projeto em Paço dos Arcos -  Lisboa/img14.JPG",
+				"alt": "Projeto em Paço dos Arcos - Lisboa - foto 14"
+			},
+			{
+				"src": "img/projetos/Projeto em Paço dos Arcos -  Lisboa/img15.JPG",
+				"alt": "Projeto em Paço dos Arcos - Lisboa - foto 15"
+			},
+			{
+				"src": "img/projetos/Projeto em Paço dos Arcos -  Lisboa/img16.JPG",
+				"alt": "Projeto em Paço dos Arcos - Lisboa - foto 16"
+			},
+			{
+				"src": "img/projetos/Projeto em Paço dos Arcos -  Lisboa/img17.JPG",
+				"alt": "Projeto em Paço dos Arcos - Lisboa - foto 17"
+			},
+			{
+				"src": "img/projetos/Projeto em Paço dos Arcos -  Lisboa/img18.JPG",
+				"alt": "Projeto em Paço dos Arcos - Lisboa - foto 18"
+			}
+		]
+	},
+	{
+		"id": "sao-joao-daas-lampras",
+		"title": "São João das Lampras",
+		"photos": [
+			{
+				"src": "img/projetos/São joão daas lampras/img1.JPG",
+				"alt": "São João das Lampras - foto 1"
+			},
+			{
+				"src": "img/projetos/São joão daas lampras/img2.JPG",
+				"alt": "São João das Lampras - foto 2"
+			},
+			{
+				"src": "img/projetos/São joão daas lampras/img3.JPG",
+				"alt": "São João das Lampras - foto 3"
+			},
+			{
+				"src": "img/projetos/São joão daas lampras/img4.JPG",
+				"alt": "São João das Lampras - foto 4"
+			},
+			{
+				"src": "img/projetos/São joão daas lampras/img5.JPG",
+				"alt": "São João das Lampras - foto 5"
+			},
+			{
+				"src": "img/projetos/São joão daas lampras/img6.JPG",
+				"alt": "São João das Lampras - foto 6"
+			},
+			{
+				"src": "img/projetos/São joão daas lampras/img7.JPG",
+				"alt": "São João das Lampras - foto 7"
+			},
+			{
+				"src": "img/projetos/São joão daas lampras/img8.JPG",
+				"alt": "São João das Lampras - foto 8"
+			},
+			{
+				"src": "img/projetos/São joão daas lampras/img9.JPG",
+				"alt": "São João das Lampras - foto 9"
+			},
+			{
+				"src": "img/projetos/São joão daas lampras/img10.JPG",
+				"alt": "São João das Lampras - foto 10"
+			},
+			{
+				"src": "img/projetos/São joão daas lampras/img12.JPG",
+				"alt": "São João das Lampras - foto 11"
+			},
+			{
+				"src": "img/projetos/São joão daas lampras/img13.JPG",
+				"alt": "São João das Lampras - foto 12"
+			},
+			{
+				"src": "img/projetos/São joão daas lampras/img14.JPG",
+				"alt": "São João das Lampras - foto 13"
+			},
+			{
+				"src": "img/projetos/São joão daas lampras/img15.JPG",
+				"alt": "São João das Lampras - foto 14"
+			},
+			{
+				"src": "img/projetos/São joão daas lampras/img16.JPG",
+				"alt": "São João das Lampras - foto 15"
+			},
+			{
+				"src": "img/projetos/São joão daas lampras/img17.JPG",
+				"alt": "São João das Lampras - foto 16"
+			},
+			{
+				"src": "img/projetos/São joão daas lampras/img18.JPG",
+				"alt": "São João das Lampras - foto 17"
+			},
+			{
+				"src": "img/projetos/São joão daas lampras/ims11.JPG",
+				"alt": "São João das Lampras - foto 18"
+			}
+		]
+	},
+	{
+		"id": "projeto-em-barreiro",
+		"title": "Projeto em Barreiro",
+		"photos": [
+			{
+				"src": "img/projetos/Projeto em Barreiro/img1.jpeg",
+				"alt": "Projeto em Barreiro - foto 1"
+			},
+			{
+				"src": "img/projetos/Projeto em Barreiro/img2.jpeg",
+				"alt": "Projeto em Barreiro - foto 2"
+			},
+			{
+				"src": "img/projetos/Projeto em Barreiro/img3.jpeg",
+				"alt": "Projeto em Barreiro - foto 3"
+			},
+			{
+				"src": "img/projetos/Projeto em Barreiro/img4.jpeg",
+				"alt": "Projeto em Barreiro - foto 4"
+			},
+			{
+				"src": "img/projetos/Projeto em Barreiro/img5.jpeg",
+				"alt": "Projeto em Barreiro - foto 5"
+			},
+			{
+				"src": "img/projetos/Projeto em Barreiro/img6.jpeg",
+				"alt": "Projeto em Barreiro - foto 6"
+			},
+			{
+				"src": "img/projetos/Projeto em Barreiro/img7.jpeg",
+				"alt": "Projeto em Barreiro - foto 7"
+			},
+			{
+				"src": "img/projetos/Projeto em Barreiro/img8.jpeg",
+				"alt": "Projeto em Barreiro - foto 8"
+			},
+			{
+				"src": "img/projetos/Projeto em Barreiro/img9.jpeg",
+				"alt": "Projeto em Barreiro - foto 9"
+			},
+			{
+				"src": "img/projetos/Projeto em Barreiro/img10.jpeg",
+				"alt": "Projeto em Barreiro - foto 10"
+			},
+			{
+				"src": "img/projetos/Projeto em Barreiro/img11.jpeg",
+				"alt": "Projeto em Barreiro - foto 11"
+			},
+			{
+				"src": "img/projetos/Projeto em Barreiro/img12.jpeg",
+				"alt": "Projeto em Barreiro - foto 12"
+			},
+			{
+				"src": "img/projetos/Projeto em Barreiro/img13.jpeg",
+				"alt": "Projeto em Barreiro - foto 13"
+			},
+			{
+				"src": "img/projetos/Projeto em Barreiro/img14.JPG",
+				"alt": "Projeto em Barreiro - foto 14"
+			},
+			{
+				"src": "img/projetos/Projeto em Barreiro/img15.JPG",
+				"alt": "Projeto em Barreiro - foto 15"
+			},
+			{
+				"src": "img/projetos/Projeto em Barreiro/img16.JPG",
+				"alt": "Projeto em Barreiro - foto 16"
+			},
+			{
+				"src": "img/projetos/Projeto em Barreiro/img17.JPG",
+				"alt": "Projeto em Barreiro - foto 17"
+			},
+			{
+				"src": "img/projetos/Projeto em Barreiro/img18.JPG",
+				"alt": "Projeto em Barreiro - foto 18"
+			},
+			{
+				"src": "img/projetos/Projeto em Barreiro/img19.JPG",
+				"alt": "Projeto em Barreiro - foto 19"
+			},
+			{
+				"src": "img/projetos/Projeto em Barreiro/img20.JPG",
+				"alt": "Projeto em Barreiro - foto 20"
+			},
+			{
+				"src": "img/projetos/Projeto em Barreiro/img21.JPG",
+				"alt": "Projeto em Barreiro - foto 21"
+			},
+			{
+				"src": "img/projetos/Projeto em Barreiro/img22.JPG",
+				"alt": "Projeto em Barreiro - foto 22"
+			},
+			{
+				"src": "img/projetos/Projeto em Barreiro/img23.JPG",
+				"alt": "Projeto em Barreiro - foto 23"
+			}
+		]
+	},
+	{
 		"id": "projeto-em-alvalade-lisboa",
 		"title": "Projeto em Alvalade - Lisboa",
 		"photos": [
@@ -122,64 +440,6 @@ export const PROJECT_ALBUMS = [
 			{
 				"src": "img/projetos/Projeto em cascais/img11.jpeg",
 				"alt": "Projeto em Cascais - foto 11"
-			}
-		]
-	},
-	{
-		"id": "projeto-em-barreiro",
-		"title": "Projeto em Barreiro",
-		"photos": [
-			{
-				"src": "img/projetos/Projeto em Barreiro/img1.jpeg",
-				"alt": "Projeto em Barreiro - foto 1"
-			},
-			{
-				"src": "img/projetos/Projeto em Barreiro/img2.jpeg",
-				"alt": "Projeto em Barreiro - foto 2"
-			},
-			{
-				"src": "img/projetos/Projeto em Barreiro/img3.jpeg",
-				"alt": "Projeto em Barreiro - foto 3"
-			},
-			{
-				"src": "img/projetos/Projeto em Barreiro/img4.jpeg",
-				"alt": "Projeto em Barreiro - foto 4"
-			},
-			{
-				"src": "img/projetos/Projeto em Barreiro/img5.jpeg",
-				"alt": "Projeto em Barreiro - foto 5"
-			},
-			{
-				"src": "img/projetos/Projeto em Barreiro/img6.jpeg",
-				"alt": "Projeto em Barreiro - foto 6"
-			},
-			{
-				"src": "img/projetos/Projeto em Barreiro/img7.jpeg",
-				"alt": "Projeto em Barreiro - foto 7"
-			},
-			{
-				"src": "img/projetos/Projeto em Barreiro/img8.jpeg",
-				"alt": "Projeto em Barreiro - foto 8"
-			},
-			{
-				"src": "img/projetos/Projeto em Barreiro/img9.jpeg",
-				"alt": "Projeto em Barreiro - foto 9"
-			},
-			{
-				"src": "img/projetos/Projeto em Barreiro/img10.jpeg",
-				"alt": "Projeto em Barreiro - foto 10"
-			},
-			{
-				"src": "img/projetos/Projeto em Barreiro/img11.jpeg",
-				"alt": "Projeto em Barreiro - foto 11"
-			},
-			{
-				"src": "img/projetos/Projeto em Barreiro/img12.jpeg",
-				"alt": "Projeto em Barreiro - foto 12"
-			},
-			{
-				"src": "img/projetos/Projeto em Barreiro/img13.jpeg",
-				"alt": "Projeto em Barreiro - foto 13"
 			}
 		]
 	},
