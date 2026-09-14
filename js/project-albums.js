@@ -8,15 +8,15 @@ export const PROJECT_ALBUMS = [
 		"title": "Escritório em Codivel - Odivelas",
 		"photos": [
 			{
-				"src": "img/projetos/Escritorio em Codivel - Odivelas/iimg3.JPG",
+				"src": "img/projetos/Escritorio em Codivel - Odivelas/img1.JPG",
 				"alt": "Escritório em Codivel - Odivelas - foto 1"
 			},
 			{
-				"src": "img/projetos/Escritorio em Codivel - Odivelas/img1.JPG",
+				"src": "img/projetos/Escritorio em Codivel - Odivelas/img2.JPG",
 				"alt": "Escritório em Codivel - Odivelas - foto 2"
 			},
 			{
-				"src": "img/projetos/Escritorio em Codivel - Odivelas/img2.JPG",
+				"src": "img/projetos/Escritorio em Codivel - Odivelas/img3.JPG",
 				"alt": "Escritório em Codivel - Odivelas - foto 3"
 			},
 			{
@@ -138,10 +138,6 @@ export const PROJECT_ALBUMS = [
 			{
 				"src": "img/projetos/Projeto em Paço dos Arcos -  Lisboa/img17.JPG",
 				"alt": "Projeto em Paço dos Arcos - Lisboa - foto 17"
-			},
-			{
-				"src": "img/projetos/Projeto em Paço dos Arcos -  Lisboa/img18.JPG",
-				"alt": "Projeto em Paço dos Arcos - Lisboa - foto 18"
 			}
 		]
 	},
@@ -190,36 +186,86 @@ export const PROJECT_ALBUMS = [
 				"alt": "São João das Lampras - foto 10"
 			},
 			{
-				"src": "img/projetos/São joão daas lampras/img12.JPG",
+				"src": "img/projetos/São joão daas lampras/img11.JPG",
 				"alt": "São João das Lampras - foto 11"
 			},
 			{
-				"src": "img/projetos/São joão daas lampras/img13.JPG",
+				"src": "img/projetos/São joão daas lampras/img12.JPG",
 				"alt": "São João das Lampras - foto 12"
 			},
 			{
-				"src": "img/projetos/São joão daas lampras/img14.JPG",
+				"src": "img/projetos/São joão daas lampras/img13.JPG",
 				"alt": "São João das Lampras - foto 13"
 			},
 			{
-				"src": "img/projetos/São joão daas lampras/img15.JPG",
+				"src": "img/projetos/São joão daas lampras/img14.JPG",
 				"alt": "São João das Lampras - foto 14"
 			},
 			{
-				"src": "img/projetos/São joão daas lampras/img16.JPG",
+				"src": "img/projetos/São joão daas lampras/img15.JPG",
 				"alt": "São João das Lampras - foto 15"
 			},
 			{
-				"src": "img/projetos/São joão daas lampras/img17.JPG",
+				"src": "img/projetos/São joão daas lampras/img16.JPG",
 				"alt": "São João das Lampras - foto 16"
 			},
 			{
-				"src": "img/projetos/São joão daas lampras/img18.JPG",
+				"src": "img/projetos/São joão daas lampras/img17.JPG",
 				"alt": "São João das Lampras - foto 17"
 			},
 			{
-				"src": "img/projetos/São joão daas lampras/ims11.JPG",
+				"src": "img/projetos/São joão daas lampras/img18.JPG",
 				"alt": "São João das Lampras - foto 18"
+			},
+			{
+				"src": "img/projetos/São joão daas lampras/img19.JPG",
+				"alt": "São João das Lampras - foto 19"
+			}
+		]
+	},
+	{
+		"id": "lavradio-barreiro",
+		"title": "Lavradio - Barreiro",
+		"photos": [
+			{
+				"src": "img/projetos/Lavradio - Barreiro/img1.JPG",
+				"alt": "Lavradio - Barreiro - foto 1"
+			},
+			{
+				"src": "img/projetos/Lavradio - Barreiro/img2.JPG",
+				"alt": "Lavradio - Barreiro - foto 2"
+			},
+			{
+				"src": "img/projetos/Lavradio - Barreiro/img3.JPG",
+				"alt": "Lavradio - Barreiro - foto 3"
+			},
+			{
+				"src": "img/projetos/Lavradio - Barreiro/img4.JPG",
+				"alt": "Lavradio - Barreiro - foto 4"
+			},
+			{
+				"src": "img/projetos/Lavradio - Barreiro/img5.JPG",
+				"alt": "Lavradio - Barreiro - foto 5"
+			},
+			{
+				"src": "img/projetos/Lavradio - Barreiro/img6.JPG",
+				"alt": "Lavradio - Barreiro - foto 6"
+			},
+			{
+				"src": "img/projetos/Lavradio - Barreiro/img7.JPG",
+				"alt": "Lavradio - Barreiro - foto 7"
+			},
+			{
+				"src": "img/projetos/Lavradio - Barreiro/img8.JPG",
+				"alt": "Lavradio - Barreiro - foto 8"
+			},
+			{
+				"src": "img/projetos/Lavradio - Barreiro/img9.JPG",
+				"alt": "Lavradio - Barreiro - foto 9"
+			},
+			{
+				"src": "img/projetos/Lavradio - Barreiro/img10.JPG",
+				"alt": "Lavradio - Barreiro - foto 10"
 			}
 		]
 	},
@@ -278,46 +324,6 @@ export const PROJECT_ALBUMS = [
 			{
 				"src": "img/projetos/Projeto em Barreiro/img13.jpeg",
 				"alt": "Projeto em Barreiro - foto 13"
-			},
-			{
-				"src": "img/projetos/Projeto em Barreiro/img14.JPG",
-				"alt": "Projeto em Barreiro - foto 14"
-			},
-			{
-				"src": "img/projetos/Projeto em Barreiro/img15.JPG",
-				"alt": "Projeto em Barreiro - foto 15"
-			},
-			{
-				"src": "img/projetos/Projeto em Barreiro/img16.JPG",
-				"alt": "Projeto em Barreiro - foto 16"
-			},
-			{
-				"src": "img/projetos/Projeto em Barreiro/img17.JPG",
-				"alt": "Projeto em Barreiro - foto 17"
-			},
-			{
-				"src": "img/projetos/Projeto em Barreiro/img18.JPG",
-				"alt": "Projeto em Barreiro - foto 18"
-			},
-			{
-				"src": "img/projetos/Projeto em Barreiro/img19.JPG",
-				"alt": "Projeto em Barreiro - foto 19"
-			},
-			{
-				"src": "img/projetos/Projeto em Barreiro/img20.JPG",
-				"alt": "Projeto em Barreiro - foto 20"
-			},
-			{
-				"src": "img/projetos/Projeto em Barreiro/img21.JPG",
-				"alt": "Projeto em Barreiro - foto 21"
-			},
-			{
-				"src": "img/projetos/Projeto em Barreiro/img22.JPG",
-				"alt": "Projeto em Barreiro - foto 22"
-			},
-			{
-				"src": "img/projetos/Projeto em Barreiro/img23.JPG",
-				"alt": "Projeto em Barreiro - foto 23"
 			}
 		]
 	},

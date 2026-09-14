@@ -11,6 +11,7 @@ const albumOrder = [
 	"Projeto em Almada",
 	"Projeto em Paço dos Arcos -  Lisboa",
 	"São joão daas lampras",
+	"Lavradio - Barreiro",
 	"Projeto em Barreiro",
 	"Projeto em Alvalade - Lisboa",
 	"Projeto em Roma-Areeiro",
@@ -26,6 +27,7 @@ const titleByDirectory = new Map([
 	["Projeto em cascais", "Projeto em Cascais"],
 	["Projeto em Paço dos Arcos -  Lisboa", "Projeto em Paço dos Arcos - Lisboa"],
 	["São joão daas lampras", "São João das Lampras"],
+	["Lavradio - Barreiro", "Lavradio - Barreiro"],
 ]);
 
 function toSlug(value) {
