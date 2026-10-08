@@ -500,14 +500,16 @@ nav a:hover {
 
 /* Espaçamento vertical da secção principal. */
 .hero {
-	padding: 4.5rem 0 3rem;
+	padding: 6rem 0 3rem;
 }
 
 .hero-grid {
+	position: relative;
 	display: grid;
-	grid-template-columns: 1.2fr 1fr;
-	gap: 2rem;
+	grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+	column-gap: clamp(2rem, 5vw, 4.5rem);
 	align-items: center;
+	padding-top: 8.0rem; 
 }
 
 /* Tipografia dos títulos principais do site. */
@@ -549,13 +551,55 @@ p {
 
 /* Imagem principal do hero; esta foto local foi pedida pelo utilizador para representar instalação de AC. */
 .hero-visual {
+	position: relative;
 	min-height: 360px;
-	border-radius: 18px;
+	border-radius: 18px;; 
 	border: 1px solid var(--line);
-	background:
-		linear-gradient(155deg, rgba(13, 67, 159, 0.26), rgba(7, 11, 18, 0.48)),
-		url("../img/projetos/imgGerais/img11.jpg") center/cover;
+	background: #e8edf0;
 	box-shadow: 0 16px 34px rgba(10, 31, 62, 0.16);
+}
+
+.hero-visual > img:first-child {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: inherit;
+}
+
+.hero-seal {
+	position: absolute;
+	--hero-seal-size: clamp(80px, 11.1vw, 160px);
+	top: -48px;
+	right: clamp(-120px, calc(355px - 33.333vw), -8px);
+	width: var(--hero-seal-size);
+	height: var(--hero-seal-size);
+	object-fit: contain;
+	image-rendering: auto;
+	border: 4px solid #fff;
+	border-radius: 50%;
+	background: #fff;
+	box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.82), 0 0 10px 3px rgba(255, 255, 255, 0.52), 0 6px 18px rgba(10, 31, 62, 0.2);
+	animation: hero-seal-pulse 2.4s ease-in-out infinite;
+}
+
+@keyframes hero-seal-pulse {
+	0%,
+	100% {
+		transform: scale(1);
+		box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.82), 0 0 9px 3px rgba(255, 255, 255, 0.48), 0 6px 18px rgba(10, 31, 62, 0.2);
+	}
+	50% {
+		transform: scale(1.02);
+		box-shadow: 0 0 0 2px #fff, 0 0 14px 5px rgba(255, 255, 255, 0.72), 0 7px 20px rgba(10, 31, 62, 0.21);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.hero-seal {
+		animation: none;
+	}
 }
 
 #link-alvara {
@@ -1640,6 +1684,13 @@ p {
 	.about-grid {
 		grid-template-columns: 1fr;
 	}
+	
+
+	.hero-seal {
+		margin-right: 10px; 
+		top: 0;
+		right: clamp(-40px, calc(-4vw + 2px), -6px);
+	}
 
 	.about-promo-card {
 		grid-column: auto;
@@ -1657,6 +1708,42 @@ p {
 
 	.zones-grid {
 		grid-template-columns: 1fr;
+	}
+}
+
+@media (min-width: 681px) and (max-width: 980px) {
+	.nav-wrap {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr);
+		gap: 0.35rem;
+		padding-block: 0.5rem;
+	}
+
+	.logo-title-wrap {
+		grid-row: 1;
+	}
+
+	.nav-actions {
+		grid-row: 2;
+		width: 100%;
+		min-width: 0;
+	}
+
+	.nav-actions nav {
+		width: 100%;
+		justify-content: space-between;
+		column-gap: clamp(0.45rem, 1.3vw, 1rem);
+		row-gap: 0.45rem;
+	}
+
+	.nav-actions nav a {
+		white-space: nowrap;
+	}
+}
+
+@media (min-width: 681px) and (max-width: 980px) {
+	.hero-grid {
+		padding-top: calc(clamp(80px, 11.1vw, 160px) + 1.5rem);
 	}
 }
 
@@ -2942,15 +3029,20 @@ body.menu-open .menu-toggle span:nth-child(3) {
 /* Hero compacto no mobile: evita espaço excessivo após o cabeçalho. */
 @media (max-width: 680px) {
 	.hero {
-		padding: 1.5rem 0 2.25rem;
+		padding: 2rem 0 2.25rem;
 	}
 
 	.hero-grid {
 		gap: 1.5rem;
+
 	}
 
 	.hero-visual {
 		min-height: clamp(220px, 58vw, 320px);
+	}
+
+	.hero-seal {
+		right: 0;
 	}
 }
 
